@@ -1,0 +1,3 @@
+2016/8/16 13:46:40     System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 IEGBLL.CWICCard.CheckLoginPassword(String mCode, String mPassword) 位置 E:\myProjects\我修改过的\6132-兰州二期-20160509\6132-兰州二期Dev\IEGBLL\CWICCard.cs:行号 78
+   在 IEGWsv.WSMng.CheckPassword(String code, String pwd) 位置 e:\myProjects\我修改过的\6132-兰州二期-20160509\6132-兰州二期Dev\IEGWsv\App_Code\WSMng.cs:行号 580

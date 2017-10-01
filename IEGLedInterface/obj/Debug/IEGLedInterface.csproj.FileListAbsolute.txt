@@ -1,0 +1,10 @@
+E:\6132兰州二期1228\6132-兰州二期20141228\IEGLedInterface\bin\Debug\IEGLedInterface.exe.config
+E:\6132兰州二期1228\6132-兰州二期20141228\IEGLedInterface\bin\Debug\IEGLedInterface.exe
+E:\6132兰州二期1228\6132-兰州二期20141228\IEGLedInterface\bin\Debug\IEGLedInterface.pdb
+E:\6132兰州二期1228\6132-兰州二期20141228\IEGLedInterface\obj\Debug\ResolveAssemblyReference.cache
+E:\6132兰州二期1228\6132-兰州二期20141228\IEGLedInterface\obj\Debug\IEGLedInterface.FrmLed.resources
+E:\6132兰州二期1228\6132-兰州二期20141228\IEGLedInterface\obj\Debug\IEGLedInterface.ProjectInstaller.resources
+E:\6132兰州二期1228\6132-兰州二期20141228\IEGLedInterface\obj\Debug\IEGLedInterface.Properties.Resources.resources
+E:\6132兰州二期1228\6132-兰州二期20141228\IEGLedInterface\obj\Debug\IEGLedInterface.csproj.GenerateResource.Cache
+E:\6132兰州二期1228\6132-兰州二期20141228\IEGLedInterface\obj\Debug\IEGLedInterface.exe
+E:\6132兰州二期1228\6132-兰州二期20141228\IEGLedInterface\obj\Debug\IEGLedInterface.pdb

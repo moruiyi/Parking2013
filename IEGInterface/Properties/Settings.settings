@@ -1,0 +1,78 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="IEGInterface.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="IEGInterface_localhost_WSMng" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/Setup_Web/WSMng.asmx</Value>
+    </Setting>
+    <Setting Name="SystemModel" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="MachineName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">IEGLZ</Value>
+    </Setting>
+    <Setting Name="strSendBuffer" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">S7:[S7 connection_1]DB1002,INT0,50</Value>
+    </Setting>
+    <Setting Name="strSendFlag" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">S7:[S7 connection_1]DB1002,INT100,1</Value>
+    </Setting>
+    <Setting Name="strReceiveBuffer" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">S7:[S7 connection_1]DB1001,INT0,50</Value>
+    </Setting>
+    <Setting Name="strReceiveFlag" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">S7:[S7 connection_1]DB1001,INT100,1</Value>
+    </Setting>
+    <Setting Name="strEtv1Alarms" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">S7:[S7 connection_1]DB1003,B0,54</Value>
+    </Setting>
+    <Setting Name="strEtv2Alarms" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">S7:[S7 connection_1]DB1005,B0,54</Value>
+    </Setting>
+    <Setting Name="strHall1Alarms" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">S7:[S7 connection_1]DB1023,B0,54</Value>
+    </Setting>
+    <Setting Name="strHall2Alarms" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">S7:[S7 connection_1]DB1025,B0,54</Value>
+    </Setting>
+    <Setting Name="strHall3Alarms" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">S7:[S7 connection_1]DB1027,B0,54</Value>
+    </Setting>
+    <Setting Name="strHall4Alarms" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">S7:[S7 connection_1]DB1029,B0,54</Value>
+    </Setting>
+    <Setting Name="LogPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">\\Log</Value>
+    </Setting>
+    <Setting Name="ErrorPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">\\Error</Value>
+    </Setting>
+    <Setting Name="CycleSound" Type="System.String" Scope="User">
+      <Value Profile="(Default)">18,23,27,32,34,40</Value>
+    </Setting>
+    <Setting Name="Hall1ICardCom" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">3</Value>
+    </Setting>
+    <Setting Name="Hall2ICardCom" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">4</Value>
+    </Setting>
+    <Setting Name="Hall3ICardCom" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">5</Value>
+    </Setting>
+    <Setting Name="Hall4ICardCom" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">8</Value>
+    </Setting>
+    <Setting Name="Hall1SoundCom" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="Hall2SoundCom" Type="System.String" Scope="User">
+      <Value Profile="(Default)">2</Value>
+    </Setting>
+    <Setting Name="Hall3SoundCom" Type="System.String" Scope="User">
+      <Value Profile="(Default)">3</Value>
+    </Setting>
+    <Setting Name="Hall4SoundCom" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

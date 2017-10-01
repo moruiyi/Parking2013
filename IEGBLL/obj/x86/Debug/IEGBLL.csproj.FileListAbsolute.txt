@@ -1,0 +1,7 @@
+F:\6132兰州二期1206\6132-兰州二期Dev\IEGBLL\bin\x86\Debug\IEGBLL.dll
+F:\6132兰州二期1206\6132-兰州二期Dev\IEGBLL\bin\x86\Debug\IEGBLL.pdb
+F:\6132兰州二期1206\6132-兰州二期Dev\IEGBLL\bin\x86\Debug\IEGModel.dll
+F:\6132兰州二期1206\6132-兰州二期Dev\IEGBLL\bin\x86\Debug\IEGModel.pdb
+F:\6132兰州二期1206\6132-兰州二期Dev\IEGBLL\obj\x86\Debug\ResolveAssemblyReference.cache
+F:\6132兰州二期1206\6132-兰州二期Dev\IEGBLL\obj\x86\Debug\IEGBLL.dll
+F:\6132兰州二期1206\6132-兰州二期Dev\IEGBLL\obj\x86\Debug\IEGBLL.pdb

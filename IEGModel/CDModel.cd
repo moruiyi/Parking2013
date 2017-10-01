@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="IEGModel.CObject" Collapsed="true">
+    <Position X="2" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAgAAAAAgAAAIAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IEGModel.COperator" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAIAAAEAAAAAAAQAAAAAAAACAQAAAAAAAAA=</HashCode>
+      <FileName>COperator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IEGModel.CICCard" Collapsed="true">
+    <Position X="2.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAQAIkEAAgAAEAAAAAAQgAkAAAAAASAYAAAgIA4gA=</HashCode>
+      <FileName>CICCard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IEGModel.CCustomer" Collapsed="true">
+    <Position X="4.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ADAAAAACAAAAAAAAAQAgAAAAQAAAAACCCAABAQBAgIA=</HashCode>
+      <FileName>CCustomer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IEGModel.CSMG" Collapsed="true">
+    <Position X="6" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACBAKoAAAIAAAAAAAARBQAAQAAAgGCAoAAAAABEA=</HashCode>
+      <FileName>CSMG.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IEGModel.CLocation" Collapsed="true">
+    <Position X="7.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CCBACCIEgBQTgQQAAAABABgBABIAAAhHCQEAAABBAiI=</HashCode>
+      <FileName>CLocation.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="1.127" />
+  </Class>
+  <Class Name="IEGModel.CTariff" Collapsed="true">
+    <Position X="11.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAACAAiAQgIEACAAAAAAAAJAAAAQAEIAAAAQA=</HashCode>
+      <FileName>CTariff.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="IEGModel.CErrorCode" Collapsed="true">
+    <Position X="11.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAgAAKAAAAgMAAAAAAAAAAAAAAAAAAAAQAAwAAAAAA=</HashCode>
+      <FileName>CStatCode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IEGModel.CStatCode" Collapsed="true">
+    <Position X="11.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAgAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>CStatCode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="宋体" Size="9" />
+</ClassDiagram>

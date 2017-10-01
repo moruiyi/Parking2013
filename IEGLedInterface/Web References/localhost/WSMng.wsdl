@@ -1,0 +1,4263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="SelectTempCardChargRcds">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idx" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="ctt" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="st" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="en" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelectTempCardChargRcdsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SelectTempCardChargRcdsResult" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="dt">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateTempICcardOut">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="iccode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateTempICcardOutResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CreateTempICcardOutResult" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="hnmb" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllMasterTask">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAllMasterTaskResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllMasterTaskResult" type="tns:ArrayOfCMasterTask" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfCMasterTask">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CMasterTask" nillable="true" type="tns:CMasterTask" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CMasterTask">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Tasks" type="tns:ArrayOfCTask" />
+          <s:element minOccurs="1" maxOccurs="1" name="Type" type="tns:EnmMasterTaskType" />
+          <s:element minOccurs="0" maxOccurs="1" name="ICCardCode" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsCompleted" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsTemp" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="HID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="WID" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfCTask">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CTask" nillable="true" type="tns:CTask" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CTask">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="FromLctAdrs" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ToLctAdrs" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Type" type="tns:EnmTaskType" />
+          <s:element minOccurs="1" maxOccurs="1" name="Status" type="tns:EnmTaskStatus" />
+          <s:element minOccurs="1" maxOccurs="1" name="StatusDetail" type="tns:EnmTaskStatusDetail" />
+          <s:element minOccurs="1" maxOccurs="1" name="CreateDtime" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="SendDtime" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="FinishDtime" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="ICCardCode" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="HID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="MID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Serial" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="CarSize" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Distance" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="SMG" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="SMGType" type="tns:EnmSMGType" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="EnmTaskType">
+        <s:restriction base="s:string">
+          <s:enumeration value="HallCarEntrance" />
+          <s:enumeration value="HallCarExit" />
+          <s:enumeration value="TVLoad" />
+          <s:enumeration value="TVUnload" />
+          <s:enumeration value="TVTranspose" />
+          <s:enumeration value="TVMove" />
+          <s:enumeration value="TVGetCar" />
+          <s:enumeration value="TVSaveCar" />
+          <s:enumeration value="SaveCar" />
+          <s:enumeration value="GetCar" />
+          <s:enumeration value="Transpose" />
+          <s:enumeration value="Move" />
+          <s:enumeration value="TVAvoid" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="EnmTaskStatus">
+        <s:restriction base="s:string">
+          <s:enumeration value="Init" />
+          <s:enumeration value="ICarInWaitFirstSwipeCard" />
+          <s:enumeration value="IFirstSwipedWaitforCheckSize" />
+          <s:enumeration value="ISecondSwipedWaitforCheckSize" />
+          <s:enumeration value="ISecondSwipedWaitforEVDown" />
+          <s:enumeration value="ISecondSwipedWaitforCarLeave" />
+          <s:enumeration value="TWaitforLoad" />
+          <s:enumeration value="TWaitforUnload" />
+          <s:enumeration value="UnLoadFinishing" />
+          <s:enumeration value="OWaitforGetCar" />
+          <s:enumeration value="OTVLoadWaitforEVDown" />
+          <s:enumeration value="OEVDownWaitforTVLoad" />
+          <s:enumeration value="OWaitforEVUp" />
+          <s:enumeration value="OCarOutWaitforDriveaway" />
+          <s:enumeration value="Finished" />
+          <s:enumeration value="ICheckCarFail" />
+          <s:enumeration value="TMURO" />
+          <s:enumeration value="TMUROFinished" />
+          <s:enumeration value="TMURORecoverNocar" />
+          <s:enumeration value="TMURORecoverHascar" />
+          <s:enumeration value="OTVLoadingWaitforEV" />
+          <s:enumeration value="TMUORWaitforUnload" />
+          <s:enumeration value="OWaitforEVDown" />
+          <s:enumeration value="TWaitforMove" />
+          <s:enumeration value="MoveFinishing" />
+          <s:enumeration value="HallFinishing" />
+          <s:enumeration value="LoadFinishing" />
+          <s:enumeration value="IEVDownFinished" />
+          <s:enumeration value="IEVDownFinishing" />
+          <s:enumeration value="OEVDownFinishing" />
+          <s:enumeration value="ICarInWaitPressButton" />
+          <s:enumeration value="TempOWaitforEVDown" />
+          <s:enumeration value="TempOEVDownFinishing" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="EnmTaskStatusDetail">
+        <s:restriction base="s:string">
+          <s:enumeration value="NoSend" />
+          <s:enumeration value="SendWaitAsk" />
+          <s:enumeration value="Asked" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="EnmSMGType">
+        <s:restriction base="s:string">
+          <s:enumeration value="Init" />
+          <s:enumeration value="Hall" />
+          <s:enumeration value="ETV" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="EnmMasterTaskType">
+        <s:restriction base="s:string">
+          <s:enumeration value="SaveCar" />
+          <s:enumeration value="GetCar" />
+          <s:enumeration value="Transpose" />
+          <s:enumeration value="Move" />
+          <s:enumeration value="TempGetCar" />
+          <s:enumeration value="Avoid" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="DealTvMoveFinishing">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="tid" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DealTvMoveFinishingResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="CheckSMGAcceptCommad">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="hnmb" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckSMGAcceptCommadResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CheckSMGAcceptCommadResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCarHallsSpace">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetCarHallsSpaceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCarHallsSpaceResult" type="tns:ArrayOfInt" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfInt">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="int" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="CheckMovePathIsBlock">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="tid" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckMovePathIsBlockResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CheckMovePathIsBlockResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DealEtvAvoid">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="tid" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DealEtvAvoidResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="UpdateEtvCurrAddress">
+        <s:complexType />
+      </s:element>
+      <s:element name="UpdateEtvCurrAddressResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="InterfaceTemplate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="hnmb" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InterfaceTemplateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InterfaceTemplateResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddClient">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="client" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddClientResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddClientResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RemoveClient">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="client" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RemoveClientResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetCurrentSound">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="hallNum" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCurrentSoundResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCurrentSoundResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DealCardMessage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="hallID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="physicCard" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DealCardMessageResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="UpdateStatCodes">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="codes" type="tns:ArrayOfShort" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfShort">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="short" type="s:short" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="UpdateStatCodesResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="UpdateErrorInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="errAddrs" type="tns:ArrayOfShort" />
+            <s:element minOccurs="1" maxOccurs="1" name="scNo" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateErrorInfoResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetMasterTaskFromID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="MID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMasterTaskFromIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMasterTaskFromIDResult" type="tns:CMasterTask" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMasterTaskOfTid">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="tskID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMasterTaskOfTidResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMasterTaskOfTidResult" type="tns:CMasterTask" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelectSMG">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="smg" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelectSMGResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SelectSMGResult" type="tns:CSMG" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="CSMG">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:CObject">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="Available" type="s:boolean" />
+              <s:element minOccurs="1" maxOccurs="1" name="Model" type="tns:EnmModel" />
+              <s:element minOccurs="1" maxOccurs="1" name="Warehouse" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="nIsWorking" type="s:int" />
+              <s:element minOccurs="0" maxOccurs="1" name="Address" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="Layer" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="Region" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="TaskCount" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="HallType" type="tns:EnmHallType" />
+              <s:element minOccurs="1" maxOccurs="1" name="SMGType" type="tns:EnmSMGType" />
+              <s:element minOccurs="1" maxOccurs="1" name="MTskID" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="NextTaskId" type="s:int" />
+              <s:element minOccurs="0" maxOccurs="1" name="CurrAddress" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="CObject">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Code" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="EnmModel">
+        <s:restriction base="s:string">
+          <s:enumeration value="Init" />
+          <s:enumeration value="AutoPending" />
+          <s:enumeration value="AutoAligning" />
+          <s:enumeration value="AutoStopped" />
+          <s:enumeration value="AutoStarting" />
+          <s:enumeration value="AutoStarted" />
+          <s:enumeration value="AutoStopping" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="EnmHallType">
+        <s:restriction base="s:string">
+          <s:enumeration value="Init" />
+          <s:enumeration value="Entance" />
+          <s:enumeration value="Exit" />
+          <s:enumeration value="EnterorExit" />
+          <s:enumeration value="ManageHouse" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="GetCTaskFromID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCTaskFromIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCTaskFromIDResult" type="tns:CTask" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelectLctFromAddrs">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="address" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelectLctFromAddrsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SelectLctFromAddrsResult" type="tns:CLocation" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="CLocation">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:CObject">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="Type" type="tns:EnmLocationType" />
+              <s:element minOccurs="1" maxOccurs="1" name="Status" type="tns:EnmLocationStatus" />
+              <s:element minOccurs="1" maxOccurs="1" name="Line" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="List" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="Layer" type="s:int" />
+              <s:element minOccurs="0" maxOccurs="1" name="Address" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="Warehouse" type="s:int" />
+              <s:element minOccurs="0" maxOccurs="1" name="ICCardCode" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="InDate" type="s:dateTime" />
+              <s:element minOccurs="0" maxOccurs="1" name="Size" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CarSize" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="IsLocked" type="s:boolean" />
+              <s:element minOccurs="1" maxOccurs="1" name="Distance" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="Index" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="IsQianxuan" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="Region" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="Pri" type="s:int" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:simpleType name="EnmLocationType">
+        <s:restriction base="s:string">
+          <s:enumeration value="Init" />
+          <s:enumeration value="Normal" />
+          <s:enumeration value="Hall" />
+          <s:enumeration value="Disable" />
+          <s:enumeration value="ETV" />
+          <s:enumeration value="Invalid" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="EnmLocationStatus">
+        <s:restriction base="s:string">
+          <s:enumeration value="Init" />
+          <s:enumeration value="Space" />
+          <s:enumeration value="Occupy" />
+          <s:enumeration value="Entering" />
+          <s:enumeration value="Outing" />
+          <s:enumeration value="Temping" />
+          <s:enumeration value="Idleness" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="SelectByUserCode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="code" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelectByUserCodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SelectByUserCodeResult" type="tns:CICCard" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="CICCard">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:CObject">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="PhysicCode" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="Type" type="tns:EnmICCardType" />
+              <s:element minOccurs="1" maxOccurs="1" name="Status" type="tns:EnmICCardStatus" />
+              <s:element minOccurs="1" maxOccurs="1" name="DueDtime" type="s:dateTime" />
+              <s:element minOccurs="1" maxOccurs="1" name="CreateDtime" type="s:dateTime" />
+              <s:element minOccurs="1" maxOccurs="1" name="LossDtime" type="s:dateTime" />
+              <s:element minOccurs="1" maxOccurs="1" name="DisposeDtime" type="s:dateTime" />
+              <s:element minOccurs="1" maxOccurs="1" name="CustomerID" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="OweDays" type="s:int" />
+              <s:element minOccurs="0" maxOccurs="1" name="PlatNumber" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Address" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:simpleType name="EnmICCardType">
+        <s:restriction base="s:string">
+          <s:enumeration value="Init" />
+          <s:enumeration value="Temp" />
+          <s:enumeration value="Fixed" />
+          <s:enumeration value="FixedLocation" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="EnmICCardStatus">
+        <s:restriction base="s:string">
+          <s:enumeration value="Init" />
+          <s:enumeration value="Lost" />
+          <s:enumeration value="Normal" />
+          <s:enumeration value="Disposed" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="SelectSMGsOfType">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="etype" type="tns:EnmSMGType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelectSMGsOfTypeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SelectSMGsOfTypeResult" type="tns:ArrayOfCSMG" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfCSMG">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CSMG" nillable="true" type="tns:CSMG" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="UpdateSMGStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="eqp" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="aval" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="emodel" type="tns:EnmModel" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateSMGStatusResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="DealCarEntrance">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="hallID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DealCarEntranceResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="SetTskStatusDetail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="tsk" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="detail" type="tns:EnmTaskStatusDetail" />
+            <s:element minOccurs="1" maxOccurs="1" name="sdtime" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetTskStatusDetailResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="DealUpdateTaskStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="estat" type="tns:EnmTaskStatus" />
+            <s:element minOccurs="1" maxOccurs="1" name="tsk" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DealUpdateTaskStatusResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="DealCarLeave">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="hallID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="tskID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DealCarLeaveResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="DealCheckCarFail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="hallID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DealCheckCarFailResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="DealCheckedCar">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="tskID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="hnmb" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="CCheckResult" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="distance" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DealCheckedCarResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="DealTVLoadFinishing">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="tid" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="ndist" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DealTVLoadFinishingResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="DealTVUnLoadFinishing">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="tid" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="ndist" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DealTVUnLoadFinishingResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="DealCompleteCTask">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="tskID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DealCompleteCTaskResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="DealCompleteTVMoveFinish">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="tid" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DealCompleteTVMoveFinishResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="DealCompleteTVLoadFinish">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="tid" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DealCompleteTVLoadFinishResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="ODealEVUp">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="tid" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ODealEVUpResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="UpdateSMGsWorkStat">
+        <s:complexType />
+      </s:element>
+      <s:element name="UpdateSMGsWorkStatResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="UpdateWorkingStatOfSMG">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="smg" type="tns:CSMG" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateWorkingStatOfSMGResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAllMasterTaskOfHid">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="hid" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllMasterTaskOfHidResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="mtsks" type="tns:ArrayOfCMasterTask" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckPassword">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="code" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckPasswordResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CheckPasswordResult" type="tns:COperator" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="COperator">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:CObject">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="Type" type="tns:EnmOperatorType" />
+              <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:simpleType name="EnmOperatorType">
+        <s:restriction base="s:string">
+          <s:enumeration value="Operator" />
+          <s:enumeration value="Manager" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="SelectLctofInfo">
+        <s:complexType />
+      </s:element>
+      <s:element name="SelectLctofInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SelectLctofInfoResult" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="ptotal" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pspace" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="poccupy" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pfixLct" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pBigLct" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelectSpaceLctsAndBigLcts">
+        <s:complexType />
+      </s:element>
+      <s:element name="SelectSpaceLctsAndBigLctsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SelectSpaceLctsAndBigLctsResult" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pspace" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="bigspace" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSpaceLocations">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetSpaceLocationsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetSpaceLocationsResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelectAllLocations">
+        <s:complexType />
+      </s:element>
+      <s:element name="SelectAllLocationsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SelectAllLocationsResult" type="tns:ArrayOfCLocation" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfCLocation">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CLocation" nillable="true" type="tns:CLocation" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SelectStatusCodes">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="smg" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelectStatusCodesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SelectStatusCodesResult" type="tns:ArrayOfCStatCode" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfCStatCode">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CStatCode" nillable="true" type="tns:CStatCode" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CStatCode">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="StartBit" type="s:short" />
+          <s:element minOccurs="1" maxOccurs="1" name="CurrentValue" type="s:short" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetMasterTaskCountOfHid">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="hnmb" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMasterTaskCountOfHidResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetMasterTaskCountOfHidResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCurrentTaskOfSMG">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCurrentTaskOfSMGResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCurrentTaskOfSMGResult" type="tns:CTask" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCurrentMasterTaskOfSMG">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="hnmb" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCurrentMasterTaskOfSMGResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCurrentMasterTaskOfSMGResult" type="tns:CMasterTask" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="JudgeEqpHasErrorBit">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="JudgeEqpHasErrorBitResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="JudgeEqpHasErrorBitResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadErrorCodeDescp">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="type" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoadErrorCodeDescpResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadErrorCodeDescpResult" type="tns:ArrayOfCErrorCode" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfCErrorCode">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CErrorCode" nillable="true" type="tns:CErrorCode" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CErrorCode">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="StartBit" type="s:short" />
+          <s:element minOccurs="1" maxOccurs="1" name="CurrentValue" type="s:unsignedByte" />
+          <s:element minOccurs="1" maxOccurs="1" name="Type" type="s:unsignedByte" />
+          <s:element minOccurs="1" maxOccurs="1" name="Color" type="s:unsignedByte" />
+          <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="LoadErrorsDescp">
+        <s:complexType />
+      </s:element>
+      <s:element name="LoadErrorsDescpResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadErrorsDescpResult" type="tns:ArrayOfCErrorCode" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelectCurrErrCodes">
+        <s:complexType />
+      </s:element>
+      <s:element name="SelectCurrErrCodesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SelectCurrErrCodesResult" type="tns:ArrayOfCErrorCode" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetErrorCodesOfEqpID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="type" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetErrorCodesOfEqpIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetErrorCodesOfEqpIDResult" type="tns:ArrayOfCErrorCode" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateManageMasterTask">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FrLct" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ToLct" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="mtype" type="tns:EnmMasterTaskType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateManageMasterTaskResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CreateManageMasterTaskResult" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="hallID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ManualCompleteMasterTask">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="mid" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ManualCompleteMasterTaskResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ManualCompleteMasterTaskResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ManualResetMasterTask">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="mid" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ManualResetMasterTaskResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ManualResetMasterTaskResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelectLocationOfIccd">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="iccode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelectLocationOfIccdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SelectLocationOfIccdResult" type="tns:CLocation" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ManualOutLocation">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="addrs" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ManualOutLocationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ManualOutLocationResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ManualInLocation">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="addrs" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="iccode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="carSize" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="distance" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="dt" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ManualInLocationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ManualInLocationResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ManualDisLocation">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="addrs" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ManualDisLocationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ManualDisLocationResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ManualEnableLocation">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="addrs" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ManualEnableLocationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ManualEnableLocationResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ManualTranspose">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fAddrs" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="tAddrs" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ManualTransposeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ManualTransposeResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelectAllSMGs">
+        <s:complexType />
+      </s:element>
+      <s:element name="SelectAllSMGsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SelectAllSMGsResult" type="tns:ArrayOfCSMG" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateSMGAvailable">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="eid" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="avail" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateSMGAvailableResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateSMGAvailableResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetHallType">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="hnmb" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="idx" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetHallTypeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SetHallTypeResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelectAllCustomer">
+        <s:complexType />
+      </s:element>
+      <s:element name="SelectAllCustomerResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SelectAllCustomerResult" type="tns:ArrayOfCCustomer" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfCCustomer">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CCustomer" nillable="true" type="tns:CCustomer" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CCustomer">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:CObject">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="ICCardCode" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="ICCardType" type="tns:EnmICCardType" />
+              <s:element minOccurs="0" maxOccurs="1" name="LctAddress" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="ICCardStat" type="tns:EnmICCardStatus" />
+              <s:element minOccurs="1" maxOccurs="1" name="IccdCdTime" type="s:dateTime" />
+              <s:element minOccurs="1" maxOccurs="1" name="ICCardDueDate" type="s:dateTime" />
+              <s:element minOccurs="0" maxOccurs="1" name="Address" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="PlatNumber" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Telphone" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Mobile" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="CheckFixLocationAvail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="adrs" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckFixLocationAvailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CheckFixLocationAvailResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateCustomInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cust" type="tns:CCustomer" />
+            <s:element minOccurs="0" maxOccurs="1" name="niccd" type="tns:CICCard" />
+            <s:element minOccurs="0" maxOccurs="1" name="oriCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateCustomInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateCustomInfoResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertCustomer">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cut" type="tns:CCustomer" />
+            <s:element minOccurs="0" maxOccurs="1" name="iccd" type="tns:CICCard" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertCustomerResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertCustomerResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteCustomer">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="custID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="ccode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteCustomerResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteCustomerResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertICCard">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="iccd" type="tns:CICCard" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertICCardResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertICCardResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateICCardStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="code" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="stat" type="tns:EnmICCardStatus" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateICCardStatusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateICCardStatusResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateOperatorPassword">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="code" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateOperatorPasswordResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateOperatorPasswordResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertOperator">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="opr" type="tns:COperator" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertOperatorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertOperatorResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelectAllOperators">
+        <s:complexType />
+      </s:element>
+      <s:element name="SelectAllOperatorsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SelectAllOperatorsResult" type="tns:ArrayOfCOperator" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfCOperator">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="COperator" nillable="true" type="tns:COperator" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="DeleteOprt">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="code" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteOprtResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteOprtResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertErrorLog">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="eqp" type="s:unsignedByte" />
+            <s:element minOccurs="0" maxOccurs="1" name="descp" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="dt" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertErrorLogResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertErrorLogResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelectSysLogs">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="start" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="end" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelectSysLogsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SelectSysLogsResult" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="dt">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelectErrLogs">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="start" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="end" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelectErrLogsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SelectErrLogsResult" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="dt">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteErrorLogs">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="st" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="end" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteErrorLogsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteErrorLogsResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DealOTempGetCar">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="iccode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="hallID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DealOTempGetCarResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DealOTempGetCarResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DealCarDriveLeave">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="tskID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DealCarDriveLeaveResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DealCarDriveLeaveResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DealCarOffTracing">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="tid" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DealCarOffTracingResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="CheckCarOffTracing">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="hnmb" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckCarOffTracingResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CheckCarOffTracingResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTempCardFeeInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="iccode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTempCardFeeInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetTempCardFeeInfoResult" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="tlog" type="tns:CTempCardChargeLog" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="CTempCardChargeLog">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ICCode" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="InDate" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="OutDate" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="RecivFee" type="s:float" />
+          <s:element minOccurs="1" maxOccurs="1" name="ActualFee" type="s:float" />
+          <s:element minOccurs="0" maxOccurs="1" name="OperatorCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LocationAddress" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetFixCardCurrFee">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="iccode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFixCardCurrFeeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetFixCardCurrFeeResult" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="log" type="tns:CFixCardChargeLog" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="CFixCardChargeLog">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="RecivFee" type="s:float" />
+          <s:element minOccurs="1" maxOccurs="1" name="InDate" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="ICCode" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="LastDate" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="ThisDate" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="ThisFee" type="s:float" />
+          <s:element minOccurs="1" maxOccurs="1" name="LastFee" type="s:float" />
+          <s:element minOccurs="0" maxOccurs="1" name="OperatorCode" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ICType" type="tns:EnmICCardType" />
+          <s:element minOccurs="1" maxOccurs="1" name="DueDtime" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="FeeUnit" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ICPCode" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SelectTariff">
+        <s:complexType />
+      </s:element>
+      <s:element name="SelectTariffResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SelectTariffResult" type="tns:ArrayOfCTariff" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfCTariff">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CTariff" nillable="true" type="tns:CTariff" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CTariff">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ISbusy" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="Type" type="tns:EnmICCardType" />
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Unit" type="tns:EnmFeeUnit" />
+          <s:element minOccurs="1" maxOccurs="1" name="FeeType" type="tns:EnmFeeType" />
+          <s:element minOccurs="1" maxOccurs="1" name="Time" type="s:float" />
+          <s:element minOccurs="1" maxOccurs="1" name="Fee" type="s:float" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="EnmFeeUnit">
+        <s:restriction base="s:string">
+          <s:enumeration value="Init" />
+          <s:enumeration value="Hour" />
+          <s:enumeration value="Month" />
+          <s:enumeration value="Season" />
+          <s:enumeration value="Year" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="EnmFeeType">
+        <s:restriction base="s:string">
+          <s:enumeration value="Init" />
+          <s:enumeration value="Charging" />
+          <s:enumeration value="Limited" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="SetFixCardFee">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="tlog" type="tns:CFixCardChargeLog" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetFixCardFeeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SetFixCardFeeResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertTempCardChargeLog">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="tlog" type="tns:CTempCardChargeLog" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertTempCardChargeLogResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="DeleteTariff">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="tID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteTariffResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteTariffResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertTariff">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ctff" type="tns:CTariff" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertTariffResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertTariffResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateTariff">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ctff" type="tns:CTariff" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateTariffResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateTariffResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelectFixCardChargRcds">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idx" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="ctt" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="st" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="en" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelectFixCardChargRcdsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SelectFixCardChargRcdsResult" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="dt">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="SelectTempCardChargRcdsSoapIn">
+    <wsdl:part name="parameters" element="tns:SelectTempCardChargRcds" />
+  </wsdl:message>
+  <wsdl:message name="SelectTempCardChargRcdsSoapOut">
+    <wsdl:part name="parameters" element="tns:SelectTempCardChargRcdsResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateTempICcardOutSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateTempICcardOut" />
+  </wsdl:message>
+  <wsdl:message name="CreateTempICcardOutSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateTempICcardOutResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllMasterTaskSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllMasterTask" />
+  </wsdl:message>
+  <wsdl:message name="GetAllMasterTaskSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllMasterTaskResponse" />
+  </wsdl:message>
+  <wsdl:message name="DealTvMoveFinishingSoapIn">
+    <wsdl:part name="parameters" element="tns:DealTvMoveFinishing" />
+  </wsdl:message>
+  <wsdl:message name="DealTvMoveFinishingSoapOut">
+    <wsdl:part name="parameters" element="tns:DealTvMoveFinishingResponse" />
+  </wsdl:message>
+  <wsdl:message name="CheckSMGAcceptCommadSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckSMGAcceptCommad" />
+  </wsdl:message>
+  <wsdl:message name="CheckSMGAcceptCommadSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckSMGAcceptCommadResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCarHallsSpaceSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCarHallsSpace" />
+  </wsdl:message>
+  <wsdl:message name="GetCarHallsSpaceSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCarHallsSpaceResponse" />
+  </wsdl:message>
+  <wsdl:message name="CheckMovePathIsBlockSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckMovePathIsBlock" />
+  </wsdl:message>
+  <wsdl:message name="CheckMovePathIsBlockSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckMovePathIsBlockResponse" />
+  </wsdl:message>
+  <wsdl:message name="DealEtvAvoidSoapIn">
+    <wsdl:part name="parameters" element="tns:DealEtvAvoid" />
+  </wsdl:message>
+  <wsdl:message name="DealEtvAvoidSoapOut">
+    <wsdl:part name="parameters" element="tns:DealEtvAvoidResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateEtvCurrAddressSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateEtvCurrAddress" />
+  </wsdl:message>
+  <wsdl:message name="UpdateEtvCurrAddressSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateEtvCurrAddressResponse" />
+  </wsdl:message>
+  <wsdl:message name="InterfaceTemplateSoapIn">
+    <wsdl:part name="parameters" element="tns:InterfaceTemplate" />
+  </wsdl:message>
+  <wsdl:message name="InterfaceTemplateSoapOut">
+    <wsdl:part name="parameters" element="tns:InterfaceTemplateResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddClientSoapIn">
+    <wsdl:part name="parameters" element="tns:AddClient" />
+  </wsdl:message>
+  <wsdl:message name="AddClientSoapOut">
+    <wsdl:part name="parameters" element="tns:AddClientResponse" />
+  </wsdl:message>
+  <wsdl:message name="RemoveClientSoapIn">
+    <wsdl:part name="parameters" element="tns:RemoveClient" />
+  </wsdl:message>
+  <wsdl:message name="RemoveClientSoapOut">
+    <wsdl:part name="parameters" element="tns:RemoveClientResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCurrentSoundSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCurrentSound" />
+  </wsdl:message>
+  <wsdl:message name="GetCurrentSoundSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCurrentSoundResponse" />
+  </wsdl:message>
+  <wsdl:message name="DealCardMessageSoapIn">
+    <wsdl:part name="parameters" element="tns:DealCardMessage" />
+  </wsdl:message>
+  <wsdl:message name="DealCardMessageSoapOut">
+    <wsdl:part name="parameters" element="tns:DealCardMessageResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateStatCodesSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateStatCodes" />
+  </wsdl:message>
+  <wsdl:message name="UpdateStatCodesSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateStatCodesResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateErrorInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateErrorInfo" />
+  </wsdl:message>
+  <wsdl:message name="UpdateErrorInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateErrorInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetMasterTaskFromIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMasterTaskFromID" />
+  </wsdl:message>
+  <wsdl:message name="GetMasterTaskFromIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMasterTaskFromIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetMasterTaskOfTidSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMasterTaskOfTid" />
+  </wsdl:message>
+  <wsdl:message name="GetMasterTaskOfTidSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMasterTaskOfTidResponse" />
+  </wsdl:message>
+  <wsdl:message name="SelectSMGSoapIn">
+    <wsdl:part name="parameters" element="tns:SelectSMG" />
+  </wsdl:message>
+  <wsdl:message name="SelectSMGSoapOut">
+    <wsdl:part name="parameters" element="tns:SelectSMGResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCTaskFromIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCTaskFromID" />
+  </wsdl:message>
+  <wsdl:message name="GetCTaskFromIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCTaskFromIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="SelectLctFromAddrsSoapIn">
+    <wsdl:part name="parameters" element="tns:SelectLctFromAddrs" />
+  </wsdl:message>
+  <wsdl:message name="SelectLctFromAddrsSoapOut">
+    <wsdl:part name="parameters" element="tns:SelectLctFromAddrsResponse" />
+  </wsdl:message>
+  <wsdl:message name="SelectByUserCodeSoapIn">
+    <wsdl:part name="parameters" element="tns:SelectByUserCode" />
+  </wsdl:message>
+  <wsdl:message name="SelectByUserCodeSoapOut">
+    <wsdl:part name="parameters" element="tns:SelectByUserCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="SelectSMGsOfTypeSoapIn">
+    <wsdl:part name="parameters" element="tns:SelectSMGsOfType" />
+  </wsdl:message>
+  <wsdl:message name="SelectSMGsOfTypeSoapOut">
+    <wsdl:part name="parameters" element="tns:SelectSMGsOfTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateSMGStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateSMGStatus" />
+  </wsdl:message>
+  <wsdl:message name="UpdateSMGStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateSMGStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="DealCarEntranceSoapIn">
+    <wsdl:part name="parameters" element="tns:DealCarEntrance" />
+  </wsdl:message>
+  <wsdl:message name="DealCarEntranceSoapOut">
+    <wsdl:part name="parameters" element="tns:DealCarEntranceResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetTskStatusDetailSoapIn">
+    <wsdl:part name="parameters" element="tns:SetTskStatusDetail" />
+  </wsdl:message>
+  <wsdl:message name="SetTskStatusDetailSoapOut">
+    <wsdl:part name="parameters" element="tns:SetTskStatusDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="DealUpdateTaskStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:DealUpdateTaskStatus" />
+  </wsdl:message>
+  <wsdl:message name="DealUpdateTaskStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:DealUpdateTaskStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="DealCarLeaveSoapIn">
+    <wsdl:part name="parameters" element="tns:DealCarLeave" />
+  </wsdl:message>
+  <wsdl:message name="DealCarLeaveSoapOut">
+    <wsdl:part name="parameters" element="tns:DealCarLeaveResponse" />
+  </wsdl:message>
+  <wsdl:message name="DealCheckCarFailSoapIn">
+    <wsdl:part name="parameters" element="tns:DealCheckCarFail" />
+  </wsdl:message>
+  <wsdl:message name="DealCheckCarFailSoapOut">
+    <wsdl:part name="parameters" element="tns:DealCheckCarFailResponse" />
+  </wsdl:message>
+  <wsdl:message name="DealCheckedCarSoapIn">
+    <wsdl:part name="parameters" element="tns:DealCheckedCar" />
+  </wsdl:message>
+  <wsdl:message name="DealCheckedCarSoapOut">
+    <wsdl:part name="parameters" element="tns:DealCheckedCarResponse" />
+  </wsdl:message>
+  <wsdl:message name="DealTVLoadFinishingSoapIn">
+    <wsdl:part name="parameters" element="tns:DealTVLoadFinishing" />
+  </wsdl:message>
+  <wsdl:message name="DealTVLoadFinishingSoapOut">
+    <wsdl:part name="parameters" element="tns:DealTVLoadFinishingResponse" />
+  </wsdl:message>
+  <wsdl:message name="DealTVUnLoadFinishingSoapIn">
+    <wsdl:part name="parameters" element="tns:DealTVUnLoadFinishing" />
+  </wsdl:message>
+  <wsdl:message name="DealTVUnLoadFinishingSoapOut">
+    <wsdl:part name="parameters" element="tns:DealTVUnLoadFinishingResponse" />
+  </wsdl:message>
+  <wsdl:message name="DealCompleteCTaskSoapIn">
+    <wsdl:part name="parameters" element="tns:DealCompleteCTask" />
+  </wsdl:message>
+  <wsdl:message name="DealCompleteCTaskSoapOut">
+    <wsdl:part name="parameters" element="tns:DealCompleteCTaskResponse" />
+  </wsdl:message>
+  <wsdl:message name="DealCompleteTVMoveFinishSoapIn">
+    <wsdl:part name="parameters" element="tns:DealCompleteTVMoveFinish" />
+  </wsdl:message>
+  <wsdl:message name="DealCompleteTVMoveFinishSoapOut">
+    <wsdl:part name="parameters" element="tns:DealCompleteTVMoveFinishResponse" />
+  </wsdl:message>
+  <wsdl:message name="DealCompleteTVLoadFinishSoapIn">
+    <wsdl:part name="parameters" element="tns:DealCompleteTVLoadFinish" />
+  </wsdl:message>
+  <wsdl:message name="DealCompleteTVLoadFinishSoapOut">
+    <wsdl:part name="parameters" element="tns:DealCompleteTVLoadFinishResponse" />
+  </wsdl:message>
+  <wsdl:message name="ODealEVUpSoapIn">
+    <wsdl:part name="parameters" element="tns:ODealEVUp" />
+  </wsdl:message>
+  <wsdl:message name="ODealEVUpSoapOut">
+    <wsdl:part name="parameters" element="tns:ODealEVUpResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateSMGsWorkStatSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateSMGsWorkStat" />
+  </wsdl:message>
+  <wsdl:message name="UpdateSMGsWorkStatSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateSMGsWorkStatResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateWorkingStatOfSMGSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateWorkingStatOfSMG" />
+  </wsdl:message>
+  <wsdl:message name="UpdateWorkingStatOfSMGSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateWorkingStatOfSMGResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllMasterTaskOfHidSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllMasterTaskOfHid" />
+  </wsdl:message>
+  <wsdl:message name="GetAllMasterTaskOfHidSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllMasterTaskOfHidResponse" />
+  </wsdl:message>
+  <wsdl:message name="CheckPasswordSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckPassword" />
+  </wsdl:message>
+  <wsdl:message name="CheckPasswordSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckPasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="SelectLctofInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:SelectLctofInfo" />
+  </wsdl:message>
+  <wsdl:message name="SelectLctofInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:SelectLctofInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="SelectSpaceLctsAndBigLctsSoapIn">
+    <wsdl:part name="parameters" element="tns:SelectSpaceLctsAndBigLcts" />
+  </wsdl:message>
+  <wsdl:message name="SelectSpaceLctsAndBigLctsSoapOut">
+    <wsdl:part name="parameters" element="tns:SelectSpaceLctsAndBigLctsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSpaceLocationsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSpaceLocations" />
+  </wsdl:message>
+  <wsdl:message name="GetSpaceLocationsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSpaceLocationsResponse" />
+  </wsdl:message>
+  <wsdl:message name="SelectAllLocationsSoapIn">
+    <wsdl:part name="parameters" element="tns:SelectAllLocations" />
+  </wsdl:message>
+  <wsdl:message name="SelectAllLocationsSoapOut">
+    <wsdl:part name="parameters" element="tns:SelectAllLocationsResponse" />
+  </wsdl:message>
+  <wsdl:message name="SelectStatusCodesSoapIn">
+    <wsdl:part name="parameters" element="tns:SelectStatusCodes" />
+  </wsdl:message>
+  <wsdl:message name="SelectStatusCodesSoapOut">
+    <wsdl:part name="parameters" element="tns:SelectStatusCodesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetMasterTaskCountOfHidSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMasterTaskCountOfHid" />
+  </wsdl:message>
+  <wsdl:message name="GetMasterTaskCountOfHidSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMasterTaskCountOfHidResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCurrentTaskOfSMGSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCurrentTaskOfSMG" />
+  </wsdl:message>
+  <wsdl:message name="GetCurrentTaskOfSMGSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCurrentTaskOfSMGResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCurrentMasterTaskOfSMGSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCurrentMasterTaskOfSMG" />
+  </wsdl:message>
+  <wsdl:message name="GetCurrentMasterTaskOfSMGSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCurrentMasterTaskOfSMGResponse" />
+  </wsdl:message>
+  <wsdl:message name="JudgeEqpHasErrorBitSoapIn">
+    <wsdl:part name="parameters" element="tns:JudgeEqpHasErrorBit" />
+  </wsdl:message>
+  <wsdl:message name="JudgeEqpHasErrorBitSoapOut">
+    <wsdl:part name="parameters" element="tns:JudgeEqpHasErrorBitResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadErrorCodeDescpSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadErrorCodeDescp" />
+  </wsdl:message>
+  <wsdl:message name="LoadErrorCodeDescpSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadErrorCodeDescpResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoadErrorsDescpSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadErrorsDescp" />
+  </wsdl:message>
+  <wsdl:message name="LoadErrorsDescpSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadErrorsDescpResponse" />
+  </wsdl:message>
+  <wsdl:message name="SelectCurrErrCodesSoapIn">
+    <wsdl:part name="parameters" element="tns:SelectCurrErrCodes" />
+  </wsdl:message>
+  <wsdl:message name="SelectCurrErrCodesSoapOut">
+    <wsdl:part name="parameters" element="tns:SelectCurrErrCodesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetErrorCodesOfEqpIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetErrorCodesOfEqpID" />
+  </wsdl:message>
+  <wsdl:message name="GetErrorCodesOfEqpIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetErrorCodesOfEqpIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateManageMasterTaskSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateManageMasterTask" />
+  </wsdl:message>
+  <wsdl:message name="CreateManageMasterTaskSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateManageMasterTaskResponse" />
+  </wsdl:message>
+  <wsdl:message name="ManualCompleteMasterTaskSoapIn">
+    <wsdl:part name="parameters" element="tns:ManualCompleteMasterTask" />
+  </wsdl:message>
+  <wsdl:message name="ManualCompleteMasterTaskSoapOut">
+    <wsdl:part name="parameters" element="tns:ManualCompleteMasterTaskResponse" />
+  </wsdl:message>
+  <wsdl:message name="ManualResetMasterTaskSoapIn">
+    <wsdl:part name="parameters" element="tns:ManualResetMasterTask" />
+  </wsdl:message>
+  <wsdl:message name="ManualResetMasterTaskSoapOut">
+    <wsdl:part name="parameters" element="tns:ManualResetMasterTaskResponse" />
+  </wsdl:message>
+  <wsdl:message name="SelectLocationOfIccdSoapIn">
+    <wsdl:part name="parameters" element="tns:SelectLocationOfIccd" />
+  </wsdl:message>
+  <wsdl:message name="SelectLocationOfIccdSoapOut">
+    <wsdl:part name="parameters" element="tns:SelectLocationOfIccdResponse" />
+  </wsdl:message>
+  <wsdl:message name="ManualOutLocationSoapIn">
+    <wsdl:part name="parameters" element="tns:ManualOutLocation" />
+  </wsdl:message>
+  <wsdl:message name="ManualOutLocationSoapOut">
+    <wsdl:part name="parameters" element="tns:ManualOutLocationResponse" />
+  </wsdl:message>
+  <wsdl:message name="ManualInLocationSoapIn">
+    <wsdl:part name="parameters" element="tns:ManualInLocation" />
+  </wsdl:message>
+  <wsdl:message name="ManualInLocationSoapOut">
+    <wsdl:part name="parameters" element="tns:ManualInLocationResponse" />
+  </wsdl:message>
+  <wsdl:message name="ManualDisLocationSoapIn">
+    <wsdl:part name="parameters" element="tns:ManualDisLocation" />
+  </wsdl:message>
+  <wsdl:message name="ManualDisLocationSoapOut">
+    <wsdl:part name="parameters" element="tns:ManualDisLocationResponse" />
+  </wsdl:message>
+  <wsdl:message name="ManualEnableLocationSoapIn">
+    <wsdl:part name="parameters" element="tns:ManualEnableLocation" />
+  </wsdl:message>
+  <wsdl:message name="ManualEnableLocationSoapOut">
+    <wsdl:part name="parameters" element="tns:ManualEnableLocationResponse" />
+  </wsdl:message>
+  <wsdl:message name="ManualTransposeSoapIn">
+    <wsdl:part name="parameters" element="tns:ManualTranspose" />
+  </wsdl:message>
+  <wsdl:message name="ManualTransposeSoapOut">
+    <wsdl:part name="parameters" element="tns:ManualTransposeResponse" />
+  </wsdl:message>
+  <wsdl:message name="SelectAllSMGsSoapIn">
+    <wsdl:part name="parameters" element="tns:SelectAllSMGs" />
+  </wsdl:message>
+  <wsdl:message name="SelectAllSMGsSoapOut">
+    <wsdl:part name="parameters" element="tns:SelectAllSMGsResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateSMGAvailableSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateSMGAvailable" />
+  </wsdl:message>
+  <wsdl:message name="UpdateSMGAvailableSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateSMGAvailableResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetHallTypeSoapIn">
+    <wsdl:part name="parameters" element="tns:SetHallType" />
+  </wsdl:message>
+  <wsdl:message name="SetHallTypeSoapOut">
+    <wsdl:part name="parameters" element="tns:SetHallTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="SelectAllCustomerSoapIn">
+    <wsdl:part name="parameters" element="tns:SelectAllCustomer" />
+  </wsdl:message>
+  <wsdl:message name="SelectAllCustomerSoapOut">
+    <wsdl:part name="parameters" element="tns:SelectAllCustomerResponse" />
+  </wsdl:message>
+  <wsdl:message name="CheckFixLocationAvailSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckFixLocationAvail" />
+  </wsdl:message>
+  <wsdl:message name="CheckFixLocationAvailSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckFixLocationAvailResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateCustomInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateCustomInfo" />
+  </wsdl:message>
+  <wsdl:message name="UpdateCustomInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateCustomInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertCustomerSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertCustomer" />
+  </wsdl:message>
+  <wsdl:message name="InsertCustomerSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertCustomerResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteCustomerSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteCustomer" />
+  </wsdl:message>
+  <wsdl:message name="DeleteCustomerSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteCustomerResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertICCardSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertICCard" />
+  </wsdl:message>
+  <wsdl:message name="InsertICCardSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertICCardResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateICCardStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateICCardStatus" />
+  </wsdl:message>
+  <wsdl:message name="UpdateICCardStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateICCardStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateOperatorPasswordSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateOperatorPassword" />
+  </wsdl:message>
+  <wsdl:message name="UpdateOperatorPasswordSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateOperatorPasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertOperatorSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertOperator" />
+  </wsdl:message>
+  <wsdl:message name="InsertOperatorSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertOperatorResponse" />
+  </wsdl:message>
+  <wsdl:message name="SelectAllOperatorsSoapIn">
+    <wsdl:part name="parameters" element="tns:SelectAllOperators" />
+  </wsdl:message>
+  <wsdl:message name="SelectAllOperatorsSoapOut">
+    <wsdl:part name="parameters" element="tns:SelectAllOperatorsResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteOprtSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteOprt" />
+  </wsdl:message>
+  <wsdl:message name="DeleteOprtSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteOprtResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertErrorLogSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertErrorLog" />
+  </wsdl:message>
+  <wsdl:message name="InsertErrorLogSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertErrorLogResponse" />
+  </wsdl:message>
+  <wsdl:message name="SelectSysLogsSoapIn">
+    <wsdl:part name="parameters" element="tns:SelectSysLogs" />
+  </wsdl:message>
+  <wsdl:message name="SelectSysLogsSoapOut">
+    <wsdl:part name="parameters" element="tns:SelectSysLogsResponse" />
+  </wsdl:message>
+  <wsdl:message name="SelectErrLogsSoapIn">
+    <wsdl:part name="parameters" element="tns:SelectErrLogs" />
+  </wsdl:message>
+  <wsdl:message name="SelectErrLogsSoapOut">
+    <wsdl:part name="parameters" element="tns:SelectErrLogsResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteErrorLogsSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteErrorLogs" />
+  </wsdl:message>
+  <wsdl:message name="DeleteErrorLogsSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteErrorLogsResponse" />
+  </wsdl:message>
+  <wsdl:message name="DealOTempGetCarSoapIn">
+    <wsdl:part name="parameters" element="tns:DealOTempGetCar" />
+  </wsdl:message>
+  <wsdl:message name="DealOTempGetCarSoapOut">
+    <wsdl:part name="parameters" element="tns:DealOTempGetCarResponse" />
+  </wsdl:message>
+  <wsdl:message name="DealCarDriveLeaveSoapIn">
+    <wsdl:part name="parameters" element="tns:DealCarDriveLeave" />
+  </wsdl:message>
+  <wsdl:message name="DealCarDriveLeaveSoapOut">
+    <wsdl:part name="parameters" element="tns:DealCarDriveLeaveResponse" />
+  </wsdl:message>
+  <wsdl:message name="DealCarOffTracingSoapIn">
+    <wsdl:part name="parameters" element="tns:DealCarOffTracing" />
+  </wsdl:message>
+  <wsdl:message name="DealCarOffTracingSoapOut">
+    <wsdl:part name="parameters" element="tns:DealCarOffTracingResponse" />
+  </wsdl:message>
+  <wsdl:message name="CheckCarOffTracingSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckCarOffTracing" />
+  </wsdl:message>
+  <wsdl:message name="CheckCarOffTracingSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckCarOffTracingResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTempCardFeeInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTempCardFeeInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetTempCardFeeInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTempCardFeeInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetFixCardCurrFeeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetFixCardCurrFee" />
+  </wsdl:message>
+  <wsdl:message name="GetFixCardCurrFeeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetFixCardCurrFeeResponse" />
+  </wsdl:message>
+  <wsdl:message name="SelectTariffSoapIn">
+    <wsdl:part name="parameters" element="tns:SelectTariff" />
+  </wsdl:message>
+  <wsdl:message name="SelectTariffSoapOut">
+    <wsdl:part name="parameters" element="tns:SelectTariffResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetFixCardFeeSoapIn">
+    <wsdl:part name="parameters" element="tns:SetFixCardFee" />
+  </wsdl:message>
+  <wsdl:message name="SetFixCardFeeSoapOut">
+    <wsdl:part name="parameters" element="tns:SetFixCardFeeResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertTempCardChargeLogSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertTempCardChargeLog" />
+  </wsdl:message>
+  <wsdl:message name="InsertTempCardChargeLogSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertTempCardChargeLogResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteTariffSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteTariff" />
+  </wsdl:message>
+  <wsdl:message name="DeleteTariffSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteTariffResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertTariffSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertTariff" />
+  </wsdl:message>
+  <wsdl:message name="InsertTariffSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertTariffResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateTariffSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateTariff" />
+  </wsdl:message>
+  <wsdl:message name="UpdateTariffSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateTariffResponse" />
+  </wsdl:message>
+  <wsdl:message name="SelectFixCardChargRcdsSoapIn">
+    <wsdl:part name="parameters" element="tns:SelectFixCardChargRcds" />
+  </wsdl:message>
+  <wsdl:message name="SelectFixCardChargRcdsSoapOut">
+    <wsdl:part name="parameters" element="tns:SelectFixCardChargRcdsResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WSMng">
+    <wsdl:operation name="SelectTempCardChargRcds">
+      <wsdl:input message="tns:SelectTempCardChargRcdsSoapIn" />
+      <wsdl:output message="tns:SelectTempCardChargRcdsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateTempICcardOut">
+      <wsdl:input message="tns:CreateTempICcardOutSoapIn" />
+      <wsdl:output message="tns:CreateTempICcardOutSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllMasterTask">
+      <wsdl:input message="tns:GetAllMasterTaskSoapIn" />
+      <wsdl:output message="tns:GetAllMasterTaskSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DealTvMoveFinishing">
+      <wsdl:input message="tns:DealTvMoveFinishingSoapIn" />
+      <wsdl:output message="tns:DealTvMoveFinishingSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckSMGAcceptCommad">
+      <wsdl:input message="tns:CheckSMGAcceptCommadSoapIn" />
+      <wsdl:output message="tns:CheckSMGAcceptCommadSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCarHallsSpace">
+      <wsdl:input message="tns:GetCarHallsSpaceSoapIn" />
+      <wsdl:output message="tns:GetCarHallsSpaceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckMovePathIsBlock">
+      <wsdl:input message="tns:CheckMovePathIsBlockSoapIn" />
+      <wsdl:output message="tns:CheckMovePathIsBlockSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DealEtvAvoid">
+      <wsdl:input message="tns:DealEtvAvoidSoapIn" />
+      <wsdl:output message="tns:DealEtvAvoidSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateEtvCurrAddress">
+      <wsdl:input message="tns:UpdateEtvCurrAddressSoapIn" />
+      <wsdl:output message="tns:UpdateEtvCurrAddressSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InterfaceTemplate">
+      <wsdl:input message="tns:InterfaceTemplateSoapIn" />
+      <wsdl:output message="tns:InterfaceTemplateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddClient">
+      <wsdl:input message="tns:AddClientSoapIn" />
+      <wsdl:output message="tns:AddClientSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RemoveClient">
+      <wsdl:input message="tns:RemoveClientSoapIn" />
+      <wsdl:output message="tns:RemoveClientSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentSound">
+      <wsdl:input message="tns:GetCurrentSoundSoapIn" />
+      <wsdl:output message="tns:GetCurrentSoundSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DealCardMessage">
+      <wsdl:input message="tns:DealCardMessageSoapIn" />
+      <wsdl:output message="tns:DealCardMessageSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateStatCodes">
+      <wsdl:input message="tns:UpdateStatCodesSoapIn" />
+      <wsdl:output message="tns:UpdateStatCodesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateErrorInfo">
+      <wsdl:input message="tns:UpdateErrorInfoSoapIn" />
+      <wsdl:output message="tns:UpdateErrorInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMasterTaskFromID">
+      <wsdl:input message="tns:GetMasterTaskFromIDSoapIn" />
+      <wsdl:output message="tns:GetMasterTaskFromIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMasterTaskOfTid">
+      <wsdl:input message="tns:GetMasterTaskOfTidSoapIn" />
+      <wsdl:output message="tns:GetMasterTaskOfTidSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectSMG">
+      <wsdl:input message="tns:SelectSMGSoapIn" />
+      <wsdl:output message="tns:SelectSMGSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCTaskFromID">
+      <wsdl:input message="tns:GetCTaskFromIDSoapIn" />
+      <wsdl:output message="tns:GetCTaskFromIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectLctFromAddrs">
+      <wsdl:input message="tns:SelectLctFromAddrsSoapIn" />
+      <wsdl:output message="tns:SelectLctFromAddrsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectByUserCode">
+      <wsdl:input message="tns:SelectByUserCodeSoapIn" />
+      <wsdl:output message="tns:SelectByUserCodeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectSMGsOfType">
+      <wsdl:input message="tns:SelectSMGsOfTypeSoapIn" />
+      <wsdl:output message="tns:SelectSMGsOfTypeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSMGStatus">
+      <wsdl:input message="tns:UpdateSMGStatusSoapIn" />
+      <wsdl:output message="tns:UpdateSMGStatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DealCarEntrance">
+      <wsdl:input message="tns:DealCarEntranceSoapIn" />
+      <wsdl:output message="tns:DealCarEntranceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetTskStatusDetail">
+      <wsdl:input message="tns:SetTskStatusDetailSoapIn" />
+      <wsdl:output message="tns:SetTskStatusDetailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DealUpdateTaskStatus">
+      <wsdl:input message="tns:DealUpdateTaskStatusSoapIn" />
+      <wsdl:output message="tns:DealUpdateTaskStatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DealCarLeave">
+      <wsdl:input message="tns:DealCarLeaveSoapIn" />
+      <wsdl:output message="tns:DealCarLeaveSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DealCheckCarFail">
+      <wsdl:input message="tns:DealCheckCarFailSoapIn" />
+      <wsdl:output message="tns:DealCheckCarFailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DealCheckedCar">
+      <wsdl:input message="tns:DealCheckedCarSoapIn" />
+      <wsdl:output message="tns:DealCheckedCarSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DealTVLoadFinishing">
+      <wsdl:input message="tns:DealTVLoadFinishingSoapIn" />
+      <wsdl:output message="tns:DealTVLoadFinishingSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DealTVUnLoadFinishing">
+      <wsdl:input message="tns:DealTVUnLoadFinishingSoapIn" />
+      <wsdl:output message="tns:DealTVUnLoadFinishingSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DealCompleteCTask">
+      <wsdl:input message="tns:DealCompleteCTaskSoapIn" />
+      <wsdl:output message="tns:DealCompleteCTaskSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DealCompleteTVMoveFinish">
+      <wsdl:input message="tns:DealCompleteTVMoveFinishSoapIn" />
+      <wsdl:output message="tns:DealCompleteTVMoveFinishSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DealCompleteTVLoadFinish">
+      <wsdl:input message="tns:DealCompleteTVLoadFinishSoapIn" />
+      <wsdl:output message="tns:DealCompleteTVLoadFinishSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ODealEVUp">
+      <wsdl:input message="tns:ODealEVUpSoapIn" />
+      <wsdl:output message="tns:ODealEVUpSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSMGsWorkStat">
+      <wsdl:input message="tns:UpdateSMGsWorkStatSoapIn" />
+      <wsdl:output message="tns:UpdateSMGsWorkStatSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateWorkingStatOfSMG">
+      <wsdl:input message="tns:UpdateWorkingStatOfSMGSoapIn" />
+      <wsdl:output message="tns:UpdateWorkingStatOfSMGSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllMasterTaskOfHid">
+      <wsdl:input message="tns:GetAllMasterTaskOfHidSoapIn" />
+      <wsdl:output message="tns:GetAllMasterTaskOfHidSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckPassword">
+      <wsdl:input message="tns:CheckPasswordSoapIn" />
+      <wsdl:output message="tns:CheckPasswordSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectLctofInfo">
+      <wsdl:input message="tns:SelectLctofInfoSoapIn" />
+      <wsdl:output message="tns:SelectLctofInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectSpaceLctsAndBigLcts">
+      <wsdl:input message="tns:SelectSpaceLctsAndBigLctsSoapIn" />
+      <wsdl:output message="tns:SelectSpaceLctsAndBigLctsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSpaceLocations">
+      <wsdl:input message="tns:GetSpaceLocationsSoapIn" />
+      <wsdl:output message="tns:GetSpaceLocationsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllLocations">
+      <wsdl:input message="tns:SelectAllLocationsSoapIn" />
+      <wsdl:output message="tns:SelectAllLocationsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectStatusCodes">
+      <wsdl:input message="tns:SelectStatusCodesSoapIn" />
+      <wsdl:output message="tns:SelectStatusCodesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMasterTaskCountOfHid">
+      <wsdl:input message="tns:GetMasterTaskCountOfHidSoapIn" />
+      <wsdl:output message="tns:GetMasterTaskCountOfHidSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentTaskOfSMG">
+      <wsdl:input message="tns:GetCurrentTaskOfSMGSoapIn" />
+      <wsdl:output message="tns:GetCurrentTaskOfSMGSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentMasterTaskOfSMG">
+      <wsdl:input message="tns:GetCurrentMasterTaskOfSMGSoapIn" />
+      <wsdl:output message="tns:GetCurrentMasterTaskOfSMGSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="JudgeEqpHasErrorBit">
+      <wsdl:input message="tns:JudgeEqpHasErrorBitSoapIn" />
+      <wsdl:output message="tns:JudgeEqpHasErrorBitSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadErrorCodeDescp">
+      <wsdl:input message="tns:LoadErrorCodeDescpSoapIn" />
+      <wsdl:output message="tns:LoadErrorCodeDescpSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadErrorsDescp">
+      <wsdl:input message="tns:LoadErrorsDescpSoapIn" />
+      <wsdl:output message="tns:LoadErrorsDescpSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectCurrErrCodes">
+      <wsdl:input message="tns:SelectCurrErrCodesSoapIn" />
+      <wsdl:output message="tns:SelectCurrErrCodesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetErrorCodesOfEqpID">
+      <wsdl:input message="tns:GetErrorCodesOfEqpIDSoapIn" />
+      <wsdl:output message="tns:GetErrorCodesOfEqpIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateManageMasterTask">
+      <wsdl:input message="tns:CreateManageMasterTaskSoapIn" />
+      <wsdl:output message="tns:CreateManageMasterTaskSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ManualCompleteMasterTask">
+      <wsdl:input message="tns:ManualCompleteMasterTaskSoapIn" />
+      <wsdl:output message="tns:ManualCompleteMasterTaskSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ManualResetMasterTask">
+      <wsdl:input message="tns:ManualResetMasterTaskSoapIn" />
+      <wsdl:output message="tns:ManualResetMasterTaskSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectLocationOfIccd">
+      <wsdl:input message="tns:SelectLocationOfIccdSoapIn" />
+      <wsdl:output message="tns:SelectLocationOfIccdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ManualOutLocation">
+      <wsdl:input message="tns:ManualOutLocationSoapIn" />
+      <wsdl:output message="tns:ManualOutLocationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ManualInLocation">
+      <wsdl:input message="tns:ManualInLocationSoapIn" />
+      <wsdl:output message="tns:ManualInLocationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ManualDisLocation">
+      <wsdl:input message="tns:ManualDisLocationSoapIn" />
+      <wsdl:output message="tns:ManualDisLocationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ManualEnableLocation">
+      <wsdl:input message="tns:ManualEnableLocationSoapIn" />
+      <wsdl:output message="tns:ManualEnableLocationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ManualTranspose">
+      <wsdl:input message="tns:ManualTransposeSoapIn" />
+      <wsdl:output message="tns:ManualTransposeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllSMGs">
+      <wsdl:input message="tns:SelectAllSMGsSoapIn" />
+      <wsdl:output message="tns:SelectAllSMGsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSMGAvailable">
+      <wsdl:input message="tns:UpdateSMGAvailableSoapIn" />
+      <wsdl:output message="tns:UpdateSMGAvailableSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetHallType">
+      <wsdl:input message="tns:SetHallTypeSoapIn" />
+      <wsdl:output message="tns:SetHallTypeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllCustomer">
+      <wsdl:input message="tns:SelectAllCustomerSoapIn" />
+      <wsdl:output message="tns:SelectAllCustomerSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckFixLocationAvail">
+      <wsdl:input message="tns:CheckFixLocationAvailSoapIn" />
+      <wsdl:output message="tns:CheckFixLocationAvailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCustomInfo">
+      <wsdl:input message="tns:UpdateCustomInfoSoapIn" />
+      <wsdl:output message="tns:UpdateCustomInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertCustomer">
+      <wsdl:input message="tns:InsertCustomerSoapIn" />
+      <wsdl:output message="tns:InsertCustomerSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCustomer">
+      <wsdl:input message="tns:DeleteCustomerSoapIn" />
+      <wsdl:output message="tns:DeleteCustomerSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertICCard">
+      <wsdl:input message="tns:InsertICCardSoapIn" />
+      <wsdl:output message="tns:InsertICCardSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateICCardStatus">
+      <wsdl:input message="tns:UpdateICCardStatusSoapIn" />
+      <wsdl:output message="tns:UpdateICCardStatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateOperatorPassword">
+      <wsdl:input message="tns:UpdateOperatorPasswordSoapIn" />
+      <wsdl:output message="tns:UpdateOperatorPasswordSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertOperator">
+      <wsdl:input message="tns:InsertOperatorSoapIn" />
+      <wsdl:output message="tns:InsertOperatorSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllOperators">
+      <wsdl:input message="tns:SelectAllOperatorsSoapIn" />
+      <wsdl:output message="tns:SelectAllOperatorsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteOprt">
+      <wsdl:input message="tns:DeleteOprtSoapIn" />
+      <wsdl:output message="tns:DeleteOprtSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertErrorLog">
+      <wsdl:input message="tns:InsertErrorLogSoapIn" />
+      <wsdl:output message="tns:InsertErrorLogSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectSysLogs">
+      <wsdl:input message="tns:SelectSysLogsSoapIn" />
+      <wsdl:output message="tns:SelectSysLogsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectErrLogs">
+      <wsdl:input message="tns:SelectErrLogsSoapIn" />
+      <wsdl:output message="tns:SelectErrLogsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteErrorLogs">
+      <wsdl:input message="tns:DeleteErrorLogsSoapIn" />
+      <wsdl:output message="tns:DeleteErrorLogsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DealOTempGetCar">
+      <wsdl:input message="tns:DealOTempGetCarSoapIn" />
+      <wsdl:output message="tns:DealOTempGetCarSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DealCarDriveLeave">
+      <wsdl:input message="tns:DealCarDriveLeaveSoapIn" />
+      <wsdl:output message="tns:DealCarDriveLeaveSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DealCarOffTracing">
+      <wsdl:input message="tns:DealCarOffTracingSoapIn" />
+      <wsdl:output message="tns:DealCarOffTracingSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckCarOffTracing">
+      <wsdl:input message="tns:CheckCarOffTracingSoapIn" />
+      <wsdl:output message="tns:CheckCarOffTracingSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTempCardFeeInfo">
+      <wsdl:input message="tns:GetTempCardFeeInfoSoapIn" />
+      <wsdl:output message="tns:GetTempCardFeeInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFixCardCurrFee">
+      <wsdl:input message="tns:GetFixCardCurrFeeSoapIn" />
+      <wsdl:output message="tns:GetFixCardCurrFeeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectTariff">
+      <wsdl:input message="tns:SelectTariffSoapIn" />
+      <wsdl:output message="tns:SelectTariffSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetFixCardFee">
+      <wsdl:input message="tns:SetFixCardFeeSoapIn" />
+      <wsdl:output message="tns:SetFixCardFeeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertTempCardChargeLog">
+      <wsdl:input message="tns:InsertTempCardChargeLogSoapIn" />
+      <wsdl:output message="tns:InsertTempCardChargeLogSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteTariff">
+      <wsdl:input message="tns:DeleteTariffSoapIn" />
+      <wsdl:output message="tns:DeleteTariffSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertTariff">
+      <wsdl:input message="tns:InsertTariffSoapIn" />
+      <wsdl:output message="tns:InsertTariffSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTariff">
+      <wsdl:input message="tns:UpdateTariffSoapIn" />
+      <wsdl:output message="tns:UpdateTariffSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectFixCardChargRcds">
+      <wsdl:input message="tns:SelectFixCardChargRcdsSoapIn" />
+      <wsdl:output message="tns:SelectFixCardChargRcdsSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSMng" type="tns:WSMng">
+    <wsdl:documentation>
+      <wsi:Claim conformsTo="http://ws-i.org/profiles/basic/1.1" xmlns:wsi="http://ws-i.org/schemas/conformanceClaim/" />
+    </wsdl:documentation>
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SelectTempCardChargRcds">
+      <soap:operation soapAction="http://tempuri.org/SelectTempCardChargRcds" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateTempICcardOut">
+      <soap:operation soapAction="http://tempuri.org/CreateTempICcardOut" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllMasterTask">
+      <soap:operation soapAction="http://tempuri.org/GetAllMasterTask" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DealTvMoveFinishing">
+      <soap:operation soapAction="http://tempuri.org/DealTvMoveFinishing" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckSMGAcceptCommad">
+      <soap:operation soapAction="http://tempuri.org/CheckSMGAcceptCommad" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCarHallsSpace">
+      <soap:operation soapAction="http://tempuri.org/GetCarHallsSpace" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckMovePathIsBlock">
+      <soap:operation soapAction="http://tempuri.org/CheckMovePathIsBlock" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DealEtvAvoid">
+      <soap:operation soapAction="http://tempuri.org/DealEtvAvoid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateEtvCurrAddress">
+      <soap:operation soapAction="http://tempuri.org/UpdateEtvCurrAddress" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InterfaceTemplate">
+      <soap:operation soapAction="http://tempuri.org/InterfaceTemplate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddClient">
+      <soap:operation soapAction="http://tempuri.org/AddClient" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveClient">
+      <soap:operation soapAction="http://tempuri.org/RemoveClient" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentSound">
+      <soap:operation soapAction="http://tempuri.org/GetCurrentSound" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DealCardMessage">
+      <soap:operation soapAction="http://tempuri.org/DealCardMessage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateStatCodes">
+      <soap:operation soapAction="http://tempuri.org/UpdateStatCodes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateErrorInfo">
+      <soap:operation soapAction="http://tempuri.org/UpdateErrorInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMasterTaskFromID">
+      <soap:operation soapAction="http://tempuri.org/GetMasterTaskFromID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMasterTaskOfTid">
+      <soap:operation soapAction="http://tempuri.org/GetMasterTaskOfTid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectSMG">
+      <soap:operation soapAction="http://tempuri.org/SelectSMG" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCTaskFromID">
+      <soap:operation soapAction="http://tempuri.org/GetCTaskFromID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectLctFromAddrs">
+      <soap:operation soapAction="http://tempuri.org/SelectLctFromAddrs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectByUserCode">
+      <soap:operation soapAction="http://tempuri.org/SelectByUserCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectSMGsOfType">
+      <soap:operation soapAction="http://tempuri.org/SelectSMGsOfType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSMGStatus">
+      <soap:operation soapAction="http://tempuri.org/UpdateSMGStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DealCarEntrance">
+      <soap:operation soapAction="http://tempuri.org/DealCarEntrance" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetTskStatusDetail">
+      <soap:operation soapAction="http://tempuri.org/SetTskStatusDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DealUpdateTaskStatus">
+      <soap:operation soapAction="http://tempuri.org/DealUpdateTaskStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DealCarLeave">
+      <soap:operation soapAction="http://tempuri.org/DealCarLeave" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DealCheckCarFail">
+      <soap:operation soapAction="http://tempuri.org/DealCheckCarFail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DealCheckedCar">
+      <soap:operation soapAction="http://tempuri.org/DealCheckedCar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DealTVLoadFinishing">
+      <soap:operation soapAction="http://tempuri.org/DealTVLoadFinishing" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DealTVUnLoadFinishing">
+      <soap:operation soapAction="http://tempuri.org/DealTVUnLoadFinishing" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DealCompleteCTask">
+      <soap:operation soapAction="http://tempuri.org/DealCompleteCTask" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DealCompleteTVMoveFinish">
+      <soap:operation soapAction="http://tempuri.org/DealCompleteTVMoveFinish" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DealCompleteTVLoadFinish">
+      <soap:operation soapAction="http://tempuri.org/DealCompleteTVLoadFinish" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ODealEVUp">
+      <soap:operation soapAction="http://tempuri.org/ODealEVUp" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSMGsWorkStat">
+      <soap:operation soapAction="http://tempuri.org/UpdateSMGsWorkStat" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateWorkingStatOfSMG">
+      <soap:operation soapAction="http://tempuri.org/UpdateWorkingStatOfSMG" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllMasterTaskOfHid">
+      <soap:operation soapAction="http://tempuri.org/GetAllMasterTaskOfHid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckPassword">
+      <soap:operation soapAction="http://tempuri.org/CheckPassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectLctofInfo">
+      <soap:operation soapAction="http://tempuri.org/SelectLctofInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectSpaceLctsAndBigLcts">
+      <soap:operation soapAction="http://tempuri.org/SelectSpaceLctsAndBigLcts" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSpaceLocations">
+      <soap:operation soapAction="http://tempuri.org/GetSpaceLocations" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllLocations">
+      <soap:operation soapAction="http://tempuri.org/SelectAllLocations" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectStatusCodes">
+      <soap:operation soapAction="http://tempuri.org/SelectStatusCodes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMasterTaskCountOfHid">
+      <soap:operation soapAction="http://tempuri.org/GetMasterTaskCountOfHid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentTaskOfSMG">
+      <soap:operation soapAction="http://tempuri.org/GetCurrentTaskOfSMG" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentMasterTaskOfSMG">
+      <soap:operation soapAction="http://tempuri.org/GetCurrentMasterTaskOfSMG" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="JudgeEqpHasErrorBit">
+      <soap:operation soapAction="http://tempuri.org/JudgeEqpHasErrorBit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadErrorCodeDescp">
+      <soap:operation soapAction="http://tempuri.org/LoadErrorCodeDescp" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadErrorsDescp">
+      <soap:operation soapAction="http://tempuri.org/LoadErrorsDescp" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectCurrErrCodes">
+      <soap:operation soapAction="http://tempuri.org/SelectCurrErrCodes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetErrorCodesOfEqpID">
+      <soap:operation soapAction="http://tempuri.org/GetErrorCodesOfEqpID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateManageMasterTask">
+      <soap:operation soapAction="http://tempuri.org/CreateManageMasterTask" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ManualCompleteMasterTask">
+      <soap:operation soapAction="http://tempuri.org/ManualCompleteMasterTask" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ManualResetMasterTask">
+      <soap:operation soapAction="http://tempuri.org/ManualResetMasterTask" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectLocationOfIccd">
+      <soap:operation soapAction="http://tempuri.org/SelectLocationOfIccd" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ManualOutLocation">
+      <soap:operation soapAction="http://tempuri.org/ManualOutLocation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ManualInLocation">
+      <soap:operation soapAction="http://tempuri.org/ManualInLocation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ManualDisLocation">
+      <soap:operation soapAction="http://tempuri.org/ManualDisLocation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ManualEnableLocation">
+      <soap:operation soapAction="http://tempuri.org/ManualEnableLocation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ManualTranspose">
+      <soap:operation soapAction="http://tempuri.org/ManualTranspose" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllSMGs">
+      <soap:operation soapAction="http://tempuri.org/SelectAllSMGs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSMGAvailable">
+      <soap:operation soapAction="http://tempuri.org/UpdateSMGAvailable" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetHallType">
+      <soap:operation soapAction="http://tempuri.org/SetHallType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllCustomer">
+      <soap:operation soapAction="http://tempuri.org/SelectAllCustomer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckFixLocationAvail">
+      <soap:operation soapAction="http://tempuri.org/CheckFixLocationAvail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCustomInfo">
+      <soap:operation soapAction="http://tempuri.org/UpdateCustomInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertCustomer">
+      <soap:operation soapAction="http://tempuri.org/InsertCustomer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCustomer">
+      <soap:operation soapAction="http://tempuri.org/DeleteCustomer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertICCard">
+      <soap:operation soapAction="http://tempuri.org/InsertICCard" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateICCardStatus">
+      <soap:operation soapAction="http://tempuri.org/UpdateICCardStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateOperatorPassword">
+      <soap:operation soapAction="http://tempuri.org/UpdateOperatorPassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertOperator">
+      <soap:operation soapAction="http://tempuri.org/InsertOperator" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllOperators">
+      <soap:operation soapAction="http://tempuri.org/SelectAllOperators" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteOprt">
+      <soap:operation soapAction="http://tempuri.org/DeleteOprt" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertErrorLog">
+      <soap:operation soapAction="http://tempuri.org/InsertErrorLog" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectSysLogs">
+      <soap:operation soapAction="http://tempuri.org/SelectSysLogs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectErrLogs">
+      <soap:operation soapAction="http://tempuri.org/SelectErrLogs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteErrorLogs">
+      <soap:operation soapAction="http://tempuri.org/DeleteErrorLogs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DealOTempGetCar">
+      <soap:operation soapAction="http://tempuri.org/DealOTempGetCar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DealCarDriveLeave">
+      <soap:operation soapAction="http://tempuri.org/DealCarDriveLeave" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DealCarOffTracing">
+      <soap:operation soapAction="http://tempuri.org/DealCarOffTracing" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckCarOffTracing">
+      <soap:operation soapAction="http://tempuri.org/CheckCarOffTracing" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTempCardFeeInfo">
+      <soap:operation soapAction="http://tempuri.org/GetTempCardFeeInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFixCardCurrFee">
+      <soap:operation soapAction="http://tempuri.org/GetFixCardCurrFee" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectTariff">
+      <soap:operation soapAction="http://tempuri.org/SelectTariff" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetFixCardFee">
+      <soap:operation soapAction="http://tempuri.org/SetFixCardFee" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertTempCardChargeLog">
+      <soap:operation soapAction="http://tempuri.org/InsertTempCardChargeLog" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteTariff">
+      <soap:operation soapAction="http://tempuri.org/DeleteTariff" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertTariff">
+      <soap:operation soapAction="http://tempuri.org/InsertTariff" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTariff">
+      <soap:operation soapAction="http://tempuri.org/UpdateTariff" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectFixCardChargRcds">
+      <soap:operation soapAction="http://tempuri.org/SelectFixCardChargRcds" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WSMng1" type="tns:WSMng">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SelectTempCardChargRcds">
+      <soap12:operation soapAction="http://tempuri.org/SelectTempCardChargRcds" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateTempICcardOut">
+      <soap12:operation soapAction="http://tempuri.org/CreateTempICcardOut" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllMasterTask">
+      <soap12:operation soapAction="http://tempuri.org/GetAllMasterTask" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DealTvMoveFinishing">
+      <soap12:operation soapAction="http://tempuri.org/DealTvMoveFinishing" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckSMGAcceptCommad">
+      <soap12:operation soapAction="http://tempuri.org/CheckSMGAcceptCommad" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCarHallsSpace">
+      <soap12:operation soapAction="http://tempuri.org/GetCarHallsSpace" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckMovePathIsBlock">
+      <soap12:operation soapAction="http://tempuri.org/CheckMovePathIsBlock" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DealEtvAvoid">
+      <soap12:operation soapAction="http://tempuri.org/DealEtvAvoid" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateEtvCurrAddress">
+      <soap12:operation soapAction="http://tempuri.org/UpdateEtvCurrAddress" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InterfaceTemplate">
+      <soap12:operation soapAction="http://tempuri.org/InterfaceTemplate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddClient">
+      <soap12:operation soapAction="http://tempuri.org/AddClient" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveClient">
+      <soap12:operation soapAction="http://tempuri.org/RemoveClient" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentSound">
+      <soap12:operation soapAction="http://tempuri.org/GetCurrentSound" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DealCardMessage">
+      <soap12:operation soapAction="http://tempuri.org/DealCardMessage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateStatCodes">
+      <soap12:operation soapAction="http://tempuri.org/UpdateStatCodes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateErrorInfo">
+      <soap12:operation soapAction="http://tempuri.org/UpdateErrorInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMasterTaskFromID">
+      <soap12:operation soapAction="http://tempuri.org/GetMasterTaskFromID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMasterTaskOfTid">
+      <soap12:operation soapAction="http://tempuri.org/GetMasterTaskOfTid" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectSMG">
+      <soap12:operation soapAction="http://tempuri.org/SelectSMG" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCTaskFromID">
+      <soap12:operation soapAction="http://tempuri.org/GetCTaskFromID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectLctFromAddrs">
+      <soap12:operation soapAction="http://tempuri.org/SelectLctFromAddrs" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectByUserCode">
+      <soap12:operation soapAction="http://tempuri.org/SelectByUserCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectSMGsOfType">
+      <soap12:operation soapAction="http://tempuri.org/SelectSMGsOfType" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSMGStatus">
+      <soap12:operation soapAction="http://tempuri.org/UpdateSMGStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DealCarEntrance">
+      <soap12:operation soapAction="http://tempuri.org/DealCarEntrance" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetTskStatusDetail">
+      <soap12:operation soapAction="http://tempuri.org/SetTskStatusDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DealUpdateTaskStatus">
+      <soap12:operation soapAction="http://tempuri.org/DealUpdateTaskStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DealCarLeave">
+      <soap12:operation soapAction="http://tempuri.org/DealCarLeave" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DealCheckCarFail">
+      <soap12:operation soapAction="http://tempuri.org/DealCheckCarFail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DealCheckedCar">
+      <soap12:operation soapAction="http://tempuri.org/DealCheckedCar" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DealTVLoadFinishing">
+      <soap12:operation soapAction="http://tempuri.org/DealTVLoadFinishing" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DealTVUnLoadFinishing">
+      <soap12:operation soapAction="http://tempuri.org/DealTVUnLoadFinishing" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DealCompleteCTask">
+      <soap12:operation soapAction="http://tempuri.org/DealCompleteCTask" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DealCompleteTVMoveFinish">
+      <soap12:operation soapAction="http://tempuri.org/DealCompleteTVMoveFinish" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DealCompleteTVLoadFinish">
+      <soap12:operation soapAction="http://tempuri.org/DealCompleteTVLoadFinish" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ODealEVUp">
+      <soap12:operation soapAction="http://tempuri.org/ODealEVUp" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSMGsWorkStat">
+      <soap12:operation soapAction="http://tempuri.org/UpdateSMGsWorkStat" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateWorkingStatOfSMG">
+      <soap12:operation soapAction="http://tempuri.org/UpdateWorkingStatOfSMG" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllMasterTaskOfHid">
+      <soap12:operation soapAction="http://tempuri.org/GetAllMasterTaskOfHid" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckPassword">
+      <soap12:operation soapAction="http://tempuri.org/CheckPassword" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectLctofInfo">
+      <soap12:operation soapAction="http://tempuri.org/SelectLctofInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectSpaceLctsAndBigLcts">
+      <soap12:operation soapAction="http://tempuri.org/SelectSpaceLctsAndBigLcts" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSpaceLocations">
+      <soap12:operation soapAction="http://tempuri.org/GetSpaceLocations" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllLocations">
+      <soap12:operation soapAction="http://tempuri.org/SelectAllLocations" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectStatusCodes">
+      <soap12:operation soapAction="http://tempuri.org/SelectStatusCodes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMasterTaskCountOfHid">
+      <soap12:operation soapAction="http://tempuri.org/GetMasterTaskCountOfHid" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentTaskOfSMG">
+      <soap12:operation soapAction="http://tempuri.org/GetCurrentTaskOfSMG" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentMasterTaskOfSMG">
+      <soap12:operation soapAction="http://tempuri.org/GetCurrentMasterTaskOfSMG" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="JudgeEqpHasErrorBit">
+      <soap12:operation soapAction="http://tempuri.org/JudgeEqpHasErrorBit" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadErrorCodeDescp">
+      <soap12:operation soapAction="http://tempuri.org/LoadErrorCodeDescp" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadErrorsDescp">
+      <soap12:operation soapAction="http://tempuri.org/LoadErrorsDescp" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectCurrErrCodes">
+      <soap12:operation soapAction="http://tempuri.org/SelectCurrErrCodes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetErrorCodesOfEqpID">
+      <soap12:operation soapAction="http://tempuri.org/GetErrorCodesOfEqpID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateManageMasterTask">
+      <soap12:operation soapAction="http://tempuri.org/CreateManageMasterTask" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ManualCompleteMasterTask">
+      <soap12:operation soapAction="http://tempuri.org/ManualCompleteMasterTask" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ManualResetMasterTask">
+      <soap12:operation soapAction="http://tempuri.org/ManualResetMasterTask" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectLocationOfIccd">
+      <soap12:operation soapAction="http://tempuri.org/SelectLocationOfIccd" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ManualOutLocation">
+      <soap12:operation soapAction="http://tempuri.org/ManualOutLocation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ManualInLocation">
+      <soap12:operation soapAction="http://tempuri.org/ManualInLocation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ManualDisLocation">
+      <soap12:operation soapAction="http://tempuri.org/ManualDisLocation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ManualEnableLocation">
+      <soap12:operation soapAction="http://tempuri.org/ManualEnableLocation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ManualTranspose">
+      <soap12:operation soapAction="http://tempuri.org/ManualTranspose" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllSMGs">
+      <soap12:operation soapAction="http://tempuri.org/SelectAllSMGs" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSMGAvailable">
+      <soap12:operation soapAction="http://tempuri.org/UpdateSMGAvailable" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetHallType">
+      <soap12:operation soapAction="http://tempuri.org/SetHallType" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllCustomer">
+      <soap12:operation soapAction="http://tempuri.org/SelectAllCustomer" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckFixLocationAvail">
+      <soap12:operation soapAction="http://tempuri.org/CheckFixLocationAvail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCustomInfo">
+      <soap12:operation soapAction="http://tempuri.org/UpdateCustomInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertCustomer">
+      <soap12:operation soapAction="http://tempuri.org/InsertCustomer" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCustomer">
+      <soap12:operation soapAction="http://tempuri.org/DeleteCustomer" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertICCard">
+      <soap12:operation soapAction="http://tempuri.org/InsertICCard" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateICCardStatus">
+      <soap12:operation soapAction="http://tempuri.org/UpdateICCardStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateOperatorPassword">
+      <soap12:operation soapAction="http://tempuri.org/UpdateOperatorPassword" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertOperator">
+      <soap12:operation soapAction="http://tempuri.org/InsertOperator" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllOperators">
+      <soap12:operation soapAction="http://tempuri.org/SelectAllOperators" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteOprt">
+      <soap12:operation soapAction="http://tempuri.org/DeleteOprt" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertErrorLog">
+      <soap12:operation soapAction="http://tempuri.org/InsertErrorLog" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectSysLogs">
+      <soap12:operation soapAction="http://tempuri.org/SelectSysLogs" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectErrLogs">
+      <soap12:operation soapAction="http://tempuri.org/SelectErrLogs" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteErrorLogs">
+      <soap12:operation soapAction="http://tempuri.org/DeleteErrorLogs" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DealOTempGetCar">
+      <soap12:operation soapAction="http://tempuri.org/DealOTempGetCar" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DealCarDriveLeave">
+      <soap12:operation soapAction="http://tempuri.org/DealCarDriveLeave" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DealCarOffTracing">
+      <soap12:operation soapAction="http://tempuri.org/DealCarOffTracing" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckCarOffTracing">
+      <soap12:operation soapAction="http://tempuri.org/CheckCarOffTracing" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTempCardFeeInfo">
+      <soap12:operation soapAction="http://tempuri.org/GetTempCardFeeInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFixCardCurrFee">
+      <soap12:operation soapAction="http://tempuri.org/GetFixCardCurrFee" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectTariff">
+      <soap12:operation soapAction="http://tempuri.org/SelectTariff" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetFixCardFee">
+      <soap12:operation soapAction="http://tempuri.org/SetFixCardFee" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertTempCardChargeLog">
+      <soap12:operation soapAction="http://tempuri.org/InsertTempCardChargeLog" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteTariff">
+      <soap12:operation soapAction="http://tempuri.org/DeleteTariff" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertTariff">
+      <soap12:operation soapAction="http://tempuri.org/InsertTariff" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTariff">
+      <soap12:operation soapAction="http://tempuri.org/UpdateTariff" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectFixCardChargRcds">
+      <soap12:operation soapAction="http://tempuri.org/SelectFixCardChargRcds" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WSMng">
+    <wsdl:port name="WSMng" binding="tns:WSMng">
+      <soap:address location="http://localhost:36190/IEGWsv/WSMng.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WSMng1" binding="tns:WSMng1">
+      <soap12:address location="http://localhost:36190/IEGWsv/WSMng.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

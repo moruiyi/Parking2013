@@ -1,0 +1,244 @@
+F:\6132兰州二期1206\6132-兰州二期Dev\IEGInterface\bin\x64\Debug\IEGInterface.exe.config
+F:\6132兰州二期1206\6132-兰州二期Dev\IEGInterface\bin\x64\Debug\IEGInterface.exe
+F:\6132兰州二期1206\6132-兰州二期Dev\IEGInterface\bin\x64\Debug\IEGInterface.pdb
+F:\6132兰州二期1206\6132-兰州二期Dev\IEGInterface\bin\x64\Debug\Microsoft.DirectX.AudioVideoPlayback.dll
+F:\6132兰州二期1206\6132-兰州二期Dev\IEGInterface\bin\x64\Debug\Microsoft.DirectX.DirectSound.dll
+F:\6132兰州二期1206\6132-兰州二期Dev\IEGInterface\bin\x64\Debug\Microsoft.DirectX.dll
+F:\6132兰州二期1206\6132-兰州二期Dev\IEGInterface\bin\x64\Debug\OpcNetApi.Com.dll
+F:\6132兰州二期1206\6132-兰州二期Dev\IEGInterface\bin\x64\Debug\OpcNetApi.dll
+F:\6132兰州二期1206\6132-兰州二期Dev\IEGInterface\bin\x64\Debug\OpcRcw.Comn.dll
+F:\6132兰州二期1206\6132-兰州二期Dev\IEGInterface\bin\x64\Debug\OpcRcw.Da.dll
+F:\6132兰州二期1206\6132-兰州二期Dev\IEGInterface\obj\x64\Debug\ResolveAssemblyReference.cache
+F:\6132兰州二期1206\6132-兰州二期Dev\IEGInterface\obj\x64\Debug\IEGInterface.frmTest.resources
+F:\6132兰州二期1206\6132-兰州二期Dev\IEGInterface\obj\x64\Debug\IEGInterface.ProjectInstaller.resources
+F:\6132兰州二期1206\6132-兰州二期Dev\IEGInterface\obj\x64\Debug\IEGInterface.Properties.Resources.resources
+F:\6132兰州二期1206\6132-兰州二期Dev\IEGInterface\obj\x64\Debug\IEGInterface.csproj.GenerateResource.Cache
+F:\6132兰州二期1206\6132-兰州二期Dev\IEGInterface\obj\x64\Debug\IEGInterface.exe
+F:\6132兰州二期1206\6132-兰州二期Dev\IEGInterface\obj\x64\Debug\IEGInterface.pdb
+F:\MyWork\6132兰州二期1206\6132-兰州二期20141216\IEGInterface\bin\x64\Debug\IEGInterface.exe.config
+F:\MyWork\6132兰州二期1206\6132-兰州二期20141216\IEGInterface\bin\x64\Debug\IEGInterface.exe
+F:\MyWork\6132兰州二期1206\6132-兰州二期20141216\IEGInterface\bin\x64\Debug\IEGInterface.pdb
+F:\MyWork\6132兰州二期1206\6132-兰州二期20141216\IEGInterface\bin\x64\Debug\OpcNetApi.Com.dll
+F:\MyWork\6132兰州二期1206\6132-兰州二期20141216\IEGInterface\bin\x64\Debug\OpcNetApi.dll
+F:\MyWork\6132兰州二期1206\6132-兰州二期20141216\IEGInterface\bin\x64\Debug\OpcRcw.Comn.dll
+F:\MyWork\6132兰州二期1206\6132-兰州二期20141216\IEGInterface\bin\x64\Debug\OpcRcw.Da.dll
+F:\MyWork\6132兰州二期1206\6132-兰州二期20141216\IEGInterface\obj\x64\Debug\ResolveAssemblyReference.cache
+F:\MyWork\6132兰州二期1206\6132-兰州二期20141216\IEGInterface\obj\x64\Debug\IEGInterface.frmTest.resources
+F:\MyWork\6132兰州二期1206\6132-兰州二期20141216\IEGInterface\obj\x64\Debug\IEGInterface.ProjectInstaller.resources
+F:\MyWork\6132兰州二期1206\6132-兰州二期20141216\IEGInterface\obj\x64\Debug\IEGInterface.Properties.Resources.resources
+F:\MyWork\6132兰州二期1206\6132-兰州二期20141216\IEGInterface\obj\x64\Debug\IEGInterface.csproj.GenerateResource.Cache
+F:\MyWork\6132兰州二期1206\6132-兰州二期20141216\IEGInterface\obj\x64\Debug\IEGInterface.exe
+F:\MyWork\6132兰州二期1206\6132-兰州二期20141216\IEGInterface\obj\x64\Debug\IEGInterface.pdb
+F:\MyWork\6132兰州二期1216\6132-兰州二期20141216\IEGInterface\bin\x64\Debug\IEGInterface.exe.config
+F:\MyWork\6132兰州二期1216\6132-兰州二期20141216\IEGInterface\bin\x64\Debug\IEGInterface.exe
+F:\MyWork\6132兰州二期1216\6132-兰州二期20141216\IEGInterface\bin\x64\Debug\IEGInterface.pdb
+F:\MyWork\6132兰州二期1216\6132-兰州二期20141216\IEGInterface\bin\x64\Debug\OpcNetApi.Com.dll
+F:\MyWork\6132兰州二期1216\6132-兰州二期20141216\IEGInterface\bin\x64\Debug\OpcNetApi.dll
+F:\MyWork\6132兰州二期1216\6132-兰州二期20141216\IEGInterface\bin\x64\Debug\OpcRcw.Comn.dll
+F:\MyWork\6132兰州二期1216\6132-兰州二期20141216\IEGInterface\bin\x64\Debug\OpcRcw.Da.dll
+F:\MyWork\6132兰州二期1216\6132-兰州二期20141216\IEGInterface\obj\x64\Debug\ResolveAssemblyReference.cache
+F:\MyWork\6132兰州二期1216\6132-兰州二期20141216\IEGInterface\obj\x64\Debug\IEGInterface.frmTest.resources
+F:\MyWork\6132兰州二期1216\6132-兰州二期20141216\IEGInterface\obj\x64\Debug\IEGInterface.ProjectInstaller.resources
+F:\MyWork\6132兰州二期1216\6132-兰州二期20141216\IEGInterface\obj\x64\Debug\IEGInterface.Properties.Resources.resources
+F:\MyWork\6132兰州二期1216\6132-兰州二期20141216\IEGInterface\obj\x64\Debug\IEGInterface.csproj.GenerateResource.Cache
+F:\MyWork\6132兰州二期1216\6132-兰州二期20141216\IEGInterface\obj\x64\Debug\IEGInterface.exe
+F:\MyWork\6132兰州二期1216\6132-兰州二期20141216\IEGInterface\obj\x64\Debug\IEGInterface.pdb
+E:\6132兰州二期1216\6132-兰州二期20141216\IEGInterface\bin\x64\Debug\IEGInterface.exe.config
+E:\6132兰州二期1216\6132-兰州二期20141216\IEGInterface\bin\x64\Debug\IEGInterface.exe
+E:\6132兰州二期1216\6132-兰州二期20141216\IEGInterface\bin\x64\Debug\IEGInterface.pdb
+E:\6132兰州二期1216\6132-兰州二期20141216\IEGInterface\bin\x64\Debug\Microsoft.DirectX.AudioVideoPlayback.dll
+E:\6132兰州二期1216\6132-兰州二期20141216\IEGInterface\bin\x64\Debug\Microsoft.DirectX.DirectSound.dll
+E:\6132兰州二期1216\6132-兰州二期20141216\IEGInterface\bin\x64\Debug\Microsoft.DirectX.dll
+E:\6132兰州二期1216\6132-兰州二期20141216\IEGInterface\bin\x64\Debug\OpcNetApi.Com.dll
+E:\6132兰州二期1216\6132-兰州二期20141216\IEGInterface\bin\x64\Debug\OpcNetApi.dll
+E:\6132兰州二期1216\6132-兰州二期20141216\IEGInterface\bin\x64\Debug\OpcRcw.Comn.dll
+E:\6132兰州二期1216\6132-兰州二期20141216\IEGInterface\bin\x64\Debug\OpcRcw.Da.dll
+E:\6132兰州二期1216\6132-兰州二期20141216\IEGInterface\obj\x64\Debug\ResolveAssemblyReference.cache
+E:\6132兰州二期1216\6132-兰州二期20141216\IEGInterface\obj\x64\Debug\IEGInterface.frmTest.resources
+E:\6132兰州二期1216\6132-兰州二期20141216\IEGInterface\obj\x64\Debug\IEGInterface.ProjectInstaller.resources
+E:\6132兰州二期1216\6132-兰州二期20141216\IEGInterface\obj\x64\Debug\IEGInterface.Properties.Resources.resources
+E:\6132兰州二期1216\6132-兰州二期20141216\IEGInterface\obj\x64\Debug\IEGInterface.csproj.GenerateResource.Cache
+E:\6132兰州二期1216\6132-兰州二期20141216\IEGInterface\obj\x64\Debug\IEGInterface.exe
+E:\6132兰州二期1216\6132-兰州二期20141216\IEGInterface\obj\x64\Debug\IEGInterface.pdb
+E:\6132兰州二期1228\6132-兰州二期20141228\IEGInterface\bin\x64\Debug\IEGInterface.exe.config
+E:\6132兰州二期1228\6132-兰州二期20141228\IEGInterface\bin\x64\Debug\IEGInterface.exe
+E:\6132兰州二期1228\6132-兰州二期20141228\IEGInterface\bin\x64\Debug\IEGInterface.pdb
+E:\6132兰州二期1228\6132-兰州二期20141228\IEGInterface\bin\x64\Debug\Microsoft.DirectX.AudioVideoPlayback.dll
+E:\6132兰州二期1228\6132-兰州二期20141228\IEGInterface\bin\x64\Debug\Microsoft.DirectX.DirectSound.dll
+E:\6132兰州二期1228\6132-兰州二期20141228\IEGInterface\bin\x64\Debug\Microsoft.DirectX.dll
+E:\6132兰州二期1228\6132-兰州二期20141228\IEGInterface\bin\x64\Debug\OpcNetApi.Com.dll
+E:\6132兰州二期1228\6132-兰州二期20141228\IEGInterface\bin\x64\Debug\OpcNetApi.dll
+E:\6132兰州二期1228\6132-兰州二期20141228\IEGInterface\bin\x64\Debug\OpcRcw.Comn.dll
+E:\6132兰州二期1228\6132-兰州二期20141228\IEGInterface\bin\x64\Debug\OpcRcw.Da.dll
+E:\6132兰州二期1228\6132-兰州二期20141228\IEGInterface\obj\x64\Debug\ResolveAssemblyReference.cache
+E:\6132兰州二期1228\6132-兰州二期20141228\IEGInterface\obj\x64\Debug\IEGInterface.frmTest.resources
+E:\6132兰州二期1228\6132-兰州二期20141228\IEGInterface\obj\x64\Debug\IEGInterface.ProjectInstaller.resources
+E:\6132兰州二期1228\6132-兰州二期20141228\IEGInterface\obj\x64\Debug\IEGInterface.Properties.Resources.resources
+E:\6132兰州二期1228\6132-兰州二期20141228\IEGInterface\obj\x64\Debug\IEGInterface.csproj.GenerateResource.Cache
+E:\6132兰州二期1228\6132-兰州二期20141228\IEGInterface\obj\x64\Debug\IEGInterface.exe
+E:\6132兰州二期1228\6132-兰州二期20141228\IEGInterface\obj\x64\Debug\IEGInterface.pdb
+F:\myProjects\我修改过的\6132-兰州二期20150101\6132-兰州二期20150101\IEGInterface\bin\x64\Debug\IEGInterface.exe.config
+F:\myProjects\我修改过的\6132-兰州二期20150101\6132-兰州二期20150101\IEGInterface\bin\x64\Debug\IEGInterface.exe
+F:\myProjects\我修改过的\6132-兰州二期20150101\6132-兰州二期20150101\IEGInterface\bin\x64\Debug\IEGInterface.pdb
+F:\myProjects\我修改过的\6132-兰州二期20150101\6132-兰州二期20150101\IEGInterface\bin\x64\Debug\Microsoft.DirectX.AudioVideoPlayback.dll
+F:\myProjects\我修改过的\6132-兰州二期20150101\6132-兰州二期20150101\IEGInterface\bin\x64\Debug\Microsoft.DirectX.DirectSound.dll
+F:\myProjects\我修改过的\6132-兰州二期20150101\6132-兰州二期20150101\IEGInterface\bin\x64\Debug\Microsoft.DirectX.dll
+F:\myProjects\我修改过的\6132-兰州二期20150101\6132-兰州二期20150101\IEGInterface\bin\x64\Debug\OpcNetApi.Com.dll
+F:\myProjects\我修改过的\6132-兰州二期20150101\6132-兰州二期20150101\IEGInterface\bin\x64\Debug\OpcNetApi.dll
+F:\myProjects\我修改过的\6132-兰州二期20150101\6132-兰州二期20150101\IEGInterface\bin\x64\Debug\OpcRcw.Comn.dll
+F:\myProjects\我修改过的\6132-兰州二期20150101\6132-兰州二期20150101\IEGInterface\bin\x64\Debug\OpcRcw.Da.dll
+F:\myProjects\我修改过的\6132-兰州二期20150101\6132-兰州二期20150101\IEGInterface\obj\x64\Debug\ResolveAssemblyReference.cache
+F:\myProjects\我修改过的\6132-兰州二期20150101\6132-兰州二期20150101\IEGInterface\obj\x64\Debug\IEGInterface.frmTest.resources
+F:\myProjects\我修改过的\6132-兰州二期20150101\6132-兰州二期20150101\IEGInterface\obj\x64\Debug\IEGInterface.ProjectInstaller.resources
+F:\myProjects\我修改过的\6132-兰州二期20150101\6132-兰州二期20150101\IEGInterface\obj\x64\Debug\IEGInterface.Properties.Resources.resources
+F:\myProjects\我修改过的\6132-兰州二期20150101\6132-兰州二期20150101\IEGInterface\obj\x64\Debug\IEGInterface.csproj.GenerateResource.Cache
+F:\myProjects\我修改过的\6132-兰州二期20150101\6132-兰州二期20150101\IEGInterface\obj\x64\Debug\IEGInterface.exe
+F:\myProjects\我修改过的\6132-兰州二期20150101\6132-兰州二期20150101\IEGInterface\obj\x64\Debug\IEGInterface.pdb
+C:\Users\01310797\Desktop\6132兰州二期-20150806Update\IEGInterface\bin\x64\Debug\IEGInterface.exe.config
+C:\Users\01310797\Desktop\6132兰州二期-20150806Update\IEGInterface\bin\x64\Debug\IEGInterface.exe
+C:\Users\01310797\Desktop\6132兰州二期-20150806Update\IEGInterface\bin\x64\Debug\IEGInterface.pdb
+C:\Users\01310797\Desktop\6132兰州二期-20150806Update\IEGInterface\bin\x64\Debug\Microsoft.DirectX.AudioVideoPlayback.dll
+C:\Users\01310797\Desktop\6132兰州二期-20150806Update\IEGInterface\bin\x64\Debug\Microsoft.DirectX.DirectSound.dll
+C:\Users\01310797\Desktop\6132兰州二期-20150806Update\IEGInterface\bin\x64\Debug\Microsoft.DirectX.dll
+C:\Users\01310797\Desktop\6132兰州二期-20150806Update\IEGInterface\bin\x64\Debug\OpcNetApi.Com.dll
+C:\Users\01310797\Desktop\6132兰州二期-20150806Update\IEGInterface\bin\x64\Debug\OpcNetApi.dll
+C:\Users\01310797\Desktop\6132兰州二期-20150806Update\IEGInterface\bin\x64\Debug\OpcRcw.Comn.dll
+C:\Users\01310797\Desktop\6132兰州二期-20150806Update\IEGInterface\bin\x64\Debug\OpcRcw.Da.dll
+C:\Users\01310797\Desktop\6132兰州二期-20150806Update\IEGInterface\obj\x64\Debug\ResolveAssemblyReference.cache
+C:\Users\01310797\Desktop\6132兰州二期-20150806Update\IEGInterface\obj\x64\Debug\IEGInterface.frmTest.resources
+C:\Users\01310797\Desktop\6132兰州二期-20150806Update\IEGInterface\obj\x64\Debug\IEGInterface.ProjectInstaller.resources
+C:\Users\01310797\Desktop\6132兰州二期-20150806Update\IEGInterface\obj\x64\Debug\IEGInterface.Properties.Resources.resources
+C:\Users\01310797\Desktop\6132兰州二期-20150806Update\IEGInterface\obj\x64\Debug\IEGInterface.csproj.GenerateResource.Cache
+C:\Users\01310797\Desktop\6132兰州二期-20150806Update\IEGInterface\obj\x64\Debug\IEGInterface.exe
+C:\Users\01310797\Desktop\6132兰州二期-20150806Update\IEGInterface\obj\x64\Debug\IEGInterface.pdb
+C:\Users\01310797\Desktop\6132兰州二期-20150810Update\IEGInterface\bin\x64\Debug\IEGInterface.exe.config
+C:\Users\01310797\Desktop\6132兰州二期-20150810Update\IEGInterface\bin\x64\Debug\IEGInterface.exe
+C:\Users\01310797\Desktop\6132兰州二期-20150810Update\IEGInterface\bin\x64\Debug\IEGInterface.pdb
+C:\Users\01310797\Desktop\6132兰州二期-20150810Update\IEGInterface\bin\x64\Debug\Microsoft.DirectX.AudioVideoPlayback.dll
+C:\Users\01310797\Desktop\6132兰州二期-20150810Update\IEGInterface\bin\x64\Debug\Microsoft.DirectX.DirectSound.dll
+C:\Users\01310797\Desktop\6132兰州二期-20150810Update\IEGInterface\bin\x64\Debug\Microsoft.DirectX.dll
+C:\Users\01310797\Desktop\6132兰州二期-20150810Update\IEGInterface\bin\x64\Debug\OpcNetApi.Com.dll
+C:\Users\01310797\Desktop\6132兰州二期-20150810Update\IEGInterface\bin\x64\Debug\OpcNetApi.dll
+C:\Users\01310797\Desktop\6132兰州二期-20150810Update\IEGInterface\bin\x64\Debug\OpcRcw.Comn.dll
+C:\Users\01310797\Desktop\6132兰州二期-20150810Update\IEGInterface\bin\x64\Debug\OpcRcw.Da.dll
+C:\Users\01310797\Desktop\6132兰州二期-20150810Update\IEGInterface\obj\x64\Debug\ResolveAssemblyReference.cache
+C:\Users\01310797\Desktop\6132兰州二期-20150810Update\IEGInterface\obj\x64\Debug\IEGInterface.frmTest.resources
+C:\Users\01310797\Desktop\6132兰州二期-20150810Update\IEGInterface\obj\x64\Debug\IEGInterface.ProjectInstaller.resources
+C:\Users\01310797\Desktop\6132兰州二期-20150810Update\IEGInterface\obj\x64\Debug\IEGInterface.Properties.Resources.resources
+C:\Users\01310797\Desktop\6132兰州二期-20150810Update\IEGInterface\obj\x64\Debug\IEGInterface.csproj.GenerateResource.Cache
+C:\Users\01310797\Desktop\6132兰州二期-20150810Update\IEGInterface\obj\x64\Debug\IEGInterface.exe
+C:\Users\01310797\Desktop\6132兰州二期-20150810Update\IEGInterface\obj\x64\Debug\IEGInterface.pdb
+E:\mywork\6132兰州二期-20150810Update\IEGInterface\obj\x64\Debug\ResolveAssemblyReference.cache
+E:\mywork\6132兰州二期-20150810Update\IEGInterface\obj\x64\Debug\IEGInterface.frmTest.resources
+E:\mywork\6132兰州二期-20150810Update\IEGInterface\obj\x64\Debug\IEGInterface.ProjectInstaller.resources
+E:\mywork\6132兰州二期-20150810Update\IEGInterface\obj\x64\Debug\IEGInterface.Properties.Resources.resources
+E:\mywork\6132兰州二期-20150810Update\IEGInterface\obj\x64\Debug\IEGInterface.csproj.GenerateResource.Cache
+E:\mywork\6132兰州二期-20150810Update\IEGInterface\obj\x64\Debug\IEGInterface.pdb
+E:\mywork\6132兰州二期-20150810Update\IEGInterface\bin\x64\Debug\IEGInterface.exe.config
+E:\mywork\6132兰州二期-20150810Update\IEGInterface\bin\x64\Debug\IEGInterface.exe
+E:\mywork\6132兰州二期-20150810Update\IEGInterface\bin\x64\Debug\IEGInterface.pdb
+E:\mywork\6132兰州二期-20150810Update\IEGInterface\bin\x64\Debug\Microsoft.DirectX.AudioVideoPlayback.dll
+E:\mywork\6132兰州二期-20150810Update\IEGInterface\bin\x64\Debug\Microsoft.DirectX.DirectSound.dll
+E:\mywork\6132兰州二期-20150810Update\IEGInterface\bin\x64\Debug\Microsoft.DirectX.dll
+E:\mywork\6132兰州二期-20150810Update\IEGInterface\bin\x64\Debug\OpcNetApi.Com.dll
+E:\mywork\6132兰州二期-20150810Update\IEGInterface\bin\x64\Debug\OpcNetApi.dll
+E:\mywork\6132兰州二期-20150810Update\IEGInterface\bin\x64\Debug\OpcRcw.Comn.dll
+E:\mywork\6132兰州二期-20150810Update\IEGInterface\bin\x64\Debug\OpcRcw.Da.dll
+E:\mywork\6132兰州二期-20150810Update\IEGInterface\obj\x64\Debug\IEGInterface.exe
+E:\mywork\6132兰州二期-20150829\IEGInterface\bin\x64\Debug\IEGInterface.exe.config
+E:\mywork\6132兰州二期-20150829\IEGInterface\obj\x64\Debug\IEGInterface.exe
+E:\mywork\6132兰州二期-20150829\IEGInterface\obj\x64\Debug\IEGInterface.pdb
+E:\mywork\6132兰州二期-20150829\IEGInterface\bin\x64\Debug\IEGInterface.exe
+E:\mywork\6132兰州二期-20150829\IEGInterface\bin\x64\Debug\IEGInterface.pdb
+E:\mywork\6132兰州二期-20150829\IEGInterface\bin\x64\Debug\Microsoft.DirectX.AudioVideoPlayback.dll
+E:\mywork\6132兰州二期-20150829\IEGInterface\bin\x64\Debug\Microsoft.DirectX.DirectSound.dll
+E:\mywork\6132兰州二期-20150829\IEGInterface\bin\x64\Debug\Microsoft.DirectX.dll
+E:\mywork\6132兰州二期-20150829\IEGInterface\bin\x64\Debug\OpcNetApi.Com.dll
+E:\mywork\6132兰州二期-20150829\IEGInterface\bin\x64\Debug\OpcNetApi.dll
+E:\mywork\6132兰州二期-20150829\IEGInterface\bin\x64\Debug\OpcRcw.Comn.dll
+E:\mywork\6132兰州二期-20150829\IEGInterface\bin\x64\Debug\OpcRcw.Da.dll
+E:\mywork\6132兰州二期-20150829\IEGInterface\obj\x64\Debug\ResolveAssemblyReference.cache
+E:\mywork\6132兰州二期-20150829\IEGInterface\obj\x64\Debug\IEGInterface.frmTest.resources
+E:\mywork\6132兰州二期-20150829\IEGInterface\obj\x64\Debug\IEGInterface.ProjectInstaller.resources
+E:\mywork\6132兰州二期-20150829\IEGInterface\obj\x64\Debug\IEGInterface.Properties.Resources.resources
+E:\mywork\6132兰州二期-20150829\IEGInterface\obj\x64\Debug\IEGInterface.csproj.GenerateResource.Cache
+E:\mywork\6132兰州二期-20150831\IEGInterface\bin\x64\Debug\IEGInterface.exe.config
+E:\mywork\6132兰州二期-20150831\IEGInterface\obj\x64\Debug\IEGInterface.exe
+E:\mywork\6132兰州二期-20150831\IEGInterface\obj\x64\Debug\IEGInterface.pdb
+E:\mywork\6132兰州二期-20150831\IEGInterface\bin\x64\Debug\IEGInterface.exe
+E:\mywork\6132兰州二期-20150831\IEGInterface\bin\x64\Debug\IEGInterface.pdb
+E:\mywork\6132兰州二期-20150831\IEGInterface\bin\x64\Debug\Microsoft.DirectX.AudioVideoPlayback.dll
+E:\mywork\6132兰州二期-20150831\IEGInterface\bin\x64\Debug\Microsoft.DirectX.DirectSound.dll
+E:\mywork\6132兰州二期-20150831\IEGInterface\bin\x64\Debug\Microsoft.DirectX.dll
+E:\mywork\6132兰州二期-20150831\IEGInterface\bin\x64\Debug\OpcNetApi.Com.dll
+E:\mywork\6132兰州二期-20150831\IEGInterface\bin\x64\Debug\OpcNetApi.dll
+E:\mywork\6132兰州二期-20150831\IEGInterface\bin\x64\Debug\OpcRcw.Comn.dll
+E:\mywork\6132兰州二期-20150831\IEGInterface\bin\x64\Debug\OpcRcw.Da.dll
+E:\mywork\6132兰州二期-20150831\IEGInterface\obj\x64\Debug\ResolveAssemblyReference.cache
+E:\mywork\6132兰州二期-20150831\IEGInterface\obj\x64\Debug\IEGInterface.frmTest.resources
+E:\mywork\6132兰州二期-20150831\IEGInterface\obj\x64\Debug\IEGInterface.ProjectInstaller.resources
+E:\mywork\6132兰州二期-20150831\IEGInterface\obj\x64\Debug\IEGInterface.Properties.Resources.resources
+E:\mywork\6132兰州二期-20150831\IEGInterface\obj\x64\Debug\IEGInterface.csproj.GenerateResource.Cache
+E:\mywork\6132兰州二期-20150902\IEGInterface\bin\x64\Debug\IEGInterface.exe.config
+E:\mywork\6132兰州二期-20150902\IEGInterface\obj\x64\Debug\IEGInterface.exe
+E:\mywork\6132兰州二期-20150902\IEGInterface\obj\x64\Debug\IEGInterface.pdb
+C:\Program Files (x86)\mo\6132-兰州二期-20150906\6132-兰州二期Dev\IEGInterface\bin\x64\Debug\IEGInterface.exe.config
+C:\Program Files (x86)\mo\6132-兰州二期-20150906\6132-兰州二期Dev\IEGInterface\obj\x64\Debug\IEGInterface.exe
+C:\Program Files (x86)\mo\6132-兰州二期-20150906\6132-兰州二期Dev\IEGInterface\obj\x64\Debug\IEGInterface.pdb
+C:\Program Files (x86)\mo\6132-兰州二期-20150906\6132-兰州二期Dev\IEGInterface\bin\x64\Debug\IEGInterface.exe
+C:\Program Files (x86)\mo\6132-兰州二期-20150906\6132-兰州二期Dev\IEGInterface\bin\x64\Debug\IEGInterface.pdb
+C:\Program Files (x86)\mo\6132-兰州二期-20150906\6132-兰州二期Dev\IEGInterface\bin\x64\Debug\Microsoft.DirectX.AudioVideoPlayback.dll
+C:\Program Files (x86)\mo\6132-兰州二期-20150906\6132-兰州二期Dev\IEGInterface\bin\x64\Debug\Microsoft.DirectX.DirectSound.dll
+C:\Program Files (x86)\mo\6132-兰州二期-20150906\6132-兰州二期Dev\IEGInterface\bin\x64\Debug\Microsoft.DirectX.dll
+C:\Program Files (x86)\mo\6132-兰州二期-20150906\6132-兰州二期Dev\IEGInterface\bin\x64\Debug\OpcNetApi.Com.dll
+C:\Program Files (x86)\mo\6132-兰州二期-20150906\6132-兰州二期Dev\IEGInterface\bin\x64\Debug\OpcNetApi.dll
+C:\Program Files (x86)\mo\6132-兰州二期-20150906\6132-兰州二期Dev\IEGInterface\bin\x64\Debug\OpcRcw.Comn.dll
+C:\Program Files (x86)\mo\6132-兰州二期-20150906\6132-兰州二期Dev\IEGInterface\bin\x64\Debug\OpcRcw.Da.dll
+C:\Program Files (x86)\mo\6132-兰州二期-20150906\6132-兰州二期Dev\IEGInterface\obj\x64\Debug\ResolveAssemblyReference.cache
+C:\Program Files (x86)\mo\6132-兰州二期-20150906\6132-兰州二期Dev\IEGInterface\obj\x64\Debug\IEGInterface.frmTest.resources
+C:\Program Files (x86)\mo\6132-兰州二期-20150906\6132-兰州二期Dev\IEGInterface\obj\x64\Debug\IEGInterface.ProjectInstaller.resources
+C:\Program Files (x86)\mo\6132-兰州二期-20150906\6132-兰州二期Dev\IEGInterface\obj\x64\Debug\IEGInterface.Properties.Resources.resources
+C:\Program Files (x86)\mo\6132-兰州二期-20150906\6132-兰州二期Dev\IEGInterface\obj\x64\Debug\IEGInterface.csproj.GenerateResource.Cache
+C:\Program Files (x86)\mo\6132-兰州二期-20150912\6132-兰州二期Dev\IEGInterface\bin\x64\Debug\IEGInterface.exe.config
+C:\Program Files (x86)\mo\6132-兰州二期-20150912\6132-兰州二期Dev\IEGInterface\obj\x64\Debug\IEGInterface.exe
+C:\Program Files (x86)\mo\6132-兰州二期-20150912\6132-兰州二期Dev\IEGInterface\obj\x64\Debug\IEGInterface.pdb
+C:\Program Files (x86)\mo\6132-兰州二期-20150914\6132-兰州二期Dev\IEGInterface\bin\x64\Debug\IEGInterface.exe.config
+C:\Program Files (x86)\mo\6132-兰州二期-20150914\6132-兰州二期Dev\IEGInterface\obj\x64\Debug\IEGInterface.exe
+C:\Program Files (x86)\mo\6132-兰州二期-20150914\6132-兰州二期Dev\IEGInterface\obj\x64\Debug\IEGInterface.pdb
+C:\Program Files (x86)\mo\6132-兰州二期20150914\6132-兰州二期Dev\IEGInterface\bin\x64\Debug\IEGInterface.exe.config
+C:\Program Files (x86)\mo\6132-兰州二期20150914\6132-兰州二期Dev\IEGInterface\obj\x64\Debug\IEGInterface.exe
+C:\Program Files (x86)\mo\6132-兰州二期20150914\6132-兰州二期Dev\IEGInterface\obj\x64\Debug\IEGInterface.pdb
+E:\myProjects\我修改过的\6132-兰州二期-20150916\6132-兰州二期Dev\IEGInterface\bin\x64\Debug\IEGInterface.exe.config
+E:\myProjects\我修改过的\6132-兰州二期-20150916\6132-兰州二期Dev\IEGInterface\obj\x64\Debug\IEGInterface.exe
+E:\myProjects\我修改过的\6132-兰州二期-20150916\6132-兰州二期Dev\IEGInterface\obj\x64\Debug\IEGInterface.pdb
+E:\myProjects\我修改过的\6132-兰州二期-20150916\6132-兰州二期Dev\IEGInterface\bin\x64\Debug\IEGInterface.exe
+E:\myProjects\我修改过的\6132-兰州二期-20150916\6132-兰州二期Dev\IEGInterface\bin\x64\Debug\IEGInterface.pdb
+E:\myProjects\我修改过的\6132-兰州二期-20150916\6132-兰州二期Dev\IEGInterface\bin\x64\Debug\Microsoft.DirectX.AudioVideoPlayback.dll
+E:\myProjects\我修改过的\6132-兰州二期-20150916\6132-兰州二期Dev\IEGInterface\bin\x64\Debug\Microsoft.DirectX.DirectSound.dll
+E:\myProjects\我修改过的\6132-兰州二期-20150916\6132-兰州二期Dev\IEGInterface\bin\x64\Debug\Microsoft.DirectX.dll
+E:\myProjects\我修改过的\6132-兰州二期-20150916\6132-兰州二期Dev\IEGInterface\bin\x64\Debug\OpcNetApi.Com.dll
+E:\myProjects\我修改过的\6132-兰州二期-20150916\6132-兰州二期Dev\IEGInterface\bin\x64\Debug\OpcNetApi.dll
+E:\myProjects\我修改过的\6132-兰州二期-20150916\6132-兰州二期Dev\IEGInterface\bin\x64\Debug\OpcRcw.Comn.dll
+E:\myProjects\我修改过的\6132-兰州二期-20150916\6132-兰州二期Dev\IEGInterface\bin\x64\Debug\OpcRcw.Da.dll
+E:\myProjects\我修改过的\6132-兰州二期-20150916\6132-兰州二期Dev\IEGInterface\obj\x64\Debug\ResolveAssemblyReference.cache
+E:\myProjects\我修改过的\6132-兰州二期-20150916\6132-兰州二期Dev\IEGInterface\obj\x64\Debug\IEGInterface.frmTest.resources
+E:\myProjects\我修改过的\6132-兰州二期-20150916\6132-兰州二期Dev\IEGInterface\obj\x64\Debug\IEGInterface.ProjectInstaller.resources
+E:\myProjects\我修改过的\6132-兰州二期-20150916\6132-兰州二期Dev\IEGInterface\obj\x64\Debug\IEGInterface.Properties.Resources.resources
+E:\myProjects\我修改过的\6132-兰州二期-20150916\6132-兰州二期Dev\IEGInterface\obj\x64\Debug\IEGInterface.csproj.GenerateResource.Cache
+E:\myProjects\我修改过的\6132-兰州二期-20160509\6132-兰州二期Dev\IEGInterface\bin\x64\Debug\IEGInterface.exe.config
+E:\myProjects\我修改过的\6132-兰州二期-20160509\6132-兰州二期Dev\IEGInterface\bin\x64\Debug\IEGInterface.exe
+E:\myProjects\我修改过的\6132-兰州二期-20160509\6132-兰州二期Dev\IEGInterface\bin\x64\Debug\IEGInterface.pdb
+E:\myProjects\我修改过的\6132-兰州二期-20160509\6132-兰州二期Dev\IEGInterface\bin\x64\Debug\Microsoft.DirectX.AudioVideoPlayback.dll
+E:\myProjects\我修改过的\6132-兰州二期-20160509\6132-兰州二期Dev\IEGInterface\bin\x64\Debug\Microsoft.DirectX.DirectSound.dll
+E:\myProjects\我修改过的\6132-兰州二期-20160509\6132-兰州二期Dev\IEGInterface\bin\x64\Debug\Microsoft.DirectX.dll
+E:\myProjects\我修改过的\6132-兰州二期-20160509\6132-兰州二期Dev\IEGInterface\bin\x64\Debug\OpcNetApi.Com.dll
+E:\myProjects\我修改过的\6132-兰州二期-20160509\6132-兰州二期Dev\IEGInterface\bin\x64\Debug\OpcNetApi.dll
+E:\myProjects\我修改过的\6132-兰州二期-20160509\6132-兰州二期Dev\IEGInterface\bin\x64\Debug\OpcRcw.Comn.dll
+E:\myProjects\我修改过的\6132-兰州二期-20160509\6132-兰州二期Dev\IEGInterface\bin\x64\Debug\OpcRcw.Da.dll
+E:\myProjects\我修改过的\6132-兰州二期-20160509\6132-兰州二期Dev\IEGInterface\obj\x64\Debug\ResolveAssemblyReference.cache
+E:\myProjects\我修改过的\6132-兰州二期-20160509\6132-兰州二期Dev\IEGInterface\obj\x64\Debug\IEGInterface.frmTest.resources
+E:\myProjects\我修改过的\6132-兰州二期-20160509\6132-兰州二期Dev\IEGInterface\obj\x64\Debug\IEGInterface.ProjectInstaller.resources
+E:\myProjects\我修改过的\6132-兰州二期-20160509\6132-兰州二期Dev\IEGInterface\obj\x64\Debug\IEGInterface.Properties.Resources.resources
+E:\myProjects\我修改过的\6132-兰州二期-20160509\6132-兰州二期Dev\IEGInterface\obj\x64\Debug\IEGInterface.csproj.GenerateResource.Cache
+E:\myProjects\我修改过的\6132-兰州二期-20160509\6132-兰州二期Dev\IEGInterface\obj\x64\Debug\IEGInterface.exe
+E:\myProjects\我修改过的\6132-兰州二期-20160509\6132-兰州二期Dev\IEGInterface\obj\x64\Debug\IEGInterface.pdb

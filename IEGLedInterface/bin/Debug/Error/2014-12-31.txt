@@ -1,0 +1,20 @@
+2014/12/31 11:06:10      异常：
+LED1操作发生异常：System.BadImageFormatException: 试图加载格式不正确的程序。 (异常来自 HRESULT:0x8007000B)
+   在 IEGLedInterface.LEDCardWriter.SS_Open_Com(Int32 com, Int32 baud, Int32 delay)
+   在 IEGLedInterface.LEDCardWriter.LED_Open_Com() 位置 E:\6132兰州二期1228\6132-兰州二期20141228\IEGLedInterface\LEDCardWriter.cs:行号 147
+   在 IEGLedInterface.FrmLed.DealLedMessage() 位置 E:\6132兰州二期1228\6132-兰州二期20141228\IEGLedInterface\FrmLed.cs:行号 119
+2014/12/31 11:06:15      异常：
+LED2操作发生异常：System.BadImageFormatException: 试图加载格式不正确的程序。 (异常来自 HRESULT:0x8007000B)
+   在 IEGLedInterface.LEDCardWriter.SS_Open_Com(Int32 com, Int32 baud, Int32 delay)
+   在 IEGLedInterface.LEDCardWriter.LED_Open_Com() 位置 E:\6132兰州二期1228\6132-兰州二期20141228\IEGLedInterface\LEDCardWriter.cs:行号 147
+   在 IEGLedInterface.FrmLed.DealLedMessage() 位置 E:\6132兰州二期1228\6132-兰州二期20141228\IEGLedInterface\FrmLed.cs:行号 237
+2014/12/31 11:06:20      异常：
+LED3操作发生异常：System.BadImageFormatException: 试图加载格式不正确的程序。 (异常来自 HRESULT:0x8007000B)
+   在 IEGLedInterface.LEDCardWriter.SS_Open_Com(Int32 com, Int32 baud, Int32 delay)
+   在 IEGLedInterface.LEDCardWriter.LED_Open_Com() 位置 E:\6132兰州二期1228\6132-兰州二期20141228\IEGLedInterface\LEDCardWriter.cs:行号 147
+   在 IEGLedInterface.FrmLed.DealLedMessage() 位置 E:\6132兰州二期1228\6132-兰州二期20141228\IEGLedInterface\FrmLed.cs:行号 355
+2014/12/31 11:06:25      异常：
+LED4操作发生异常：System.BadImageFormatException: 试图加载格式不正确的程序。 (异常来自 HRESULT:0x8007000B)
+   在 IEGLedInterface.LEDCardWriter.SS_Open_Com(Int32 com, Int32 baud, Int32 delay)
+   在 IEGLedInterface.LEDCardWriter.LED_Open_Com() 位置 E:\6132兰州二期1228\6132-兰州二期20141228\IEGLedInterface\LEDCardWriter.cs:行号 147
+   在 IEGLedInterface.FrmLed.DealLedMessage() 位置 E:\6132兰州二期1228\6132-兰州二期20141228\IEGLedInterface\FrmLed.cs:行号 473

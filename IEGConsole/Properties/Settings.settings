@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="IEGConsole.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ICCardCom" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="VTopLedCom" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">COM0</Value>
+    </Setting>
+    <Setting Name="VTopEnable" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="IEGConsole_localhost_WSMng" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/Setup_Web/WSMng.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

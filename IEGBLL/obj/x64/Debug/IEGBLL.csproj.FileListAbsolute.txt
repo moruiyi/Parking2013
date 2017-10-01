@@ -1,0 +1,105 @@
+F:\6132兰州二期1206\6132-兰州二期Dev\IEGBLL\bin\x64\Debug\IEGBLL.dll
+F:\6132兰州二期1206\6132-兰州二期Dev\IEGBLL\bin\x64\Debug\IEGBLL.pdb
+F:\6132兰州二期1206\6132-兰州二期Dev\IEGBLL\bin\x64\Debug\IEGModel.dll
+F:\6132兰州二期1206\6132-兰州二期Dev\IEGBLL\bin\x64\Debug\IEGModel.pdb
+F:\6132兰州二期1206\6132-兰州二期Dev\IEGBLL\obj\x64\Debug\ResolveAssemblyReference.cache
+F:\6132兰州二期1206\6132-兰州二期Dev\IEGBLL\obj\x64\Debug\IEGBLL.dll
+F:\6132兰州二期1206\6132-兰州二期Dev\IEGBLL\obj\x64\Debug\IEGBLL.pdb
+E:\6132兰州二期1216\6132-兰州二期20141216\IEGBLL\bin\x64\Debug\IEGBLL.dll
+E:\6132兰州二期1216\6132-兰州二期20141216\IEGBLL\bin\x64\Debug\IEGBLL.pdb
+E:\6132兰州二期1216\6132-兰州二期20141216\IEGBLL\bin\x64\Debug\IEGModel.dll
+E:\6132兰州二期1216\6132-兰州二期20141216\IEGBLL\bin\x64\Debug\IEGModel.pdb
+E:\6132兰州二期1216\6132-兰州二期20141216\IEGBLL\obj\x64\Debug\ResolveAssemblyReference.cache
+E:\6132兰州二期1216\6132-兰州二期20141216\IEGBLL\obj\x64\Debug\IEGBLL.dll
+E:\6132兰州二期1216\6132-兰州二期20141216\IEGBLL\obj\x64\Debug\IEGBLL.pdb
+E:\6132兰州二期1228\6132-兰州二期20141228\IEGBLL\bin\x64\Debug\IEGBLL.dll
+E:\6132兰州二期1228\6132-兰州二期20141228\IEGBLL\bin\x64\Debug\IEGBLL.pdb
+E:\6132兰州二期1228\6132-兰州二期20141228\IEGBLL\bin\x64\Debug\IEGModel.dll
+E:\6132兰州二期1228\6132-兰州二期20141228\IEGBLL\bin\x64\Debug\IEGModel.pdb
+E:\6132兰州二期1228\6132-兰州二期20141228\IEGBLL\obj\x64\Debug\ResolveAssemblyReference.cache
+E:\6132兰州二期1228\6132-兰州二期20141228\IEGBLL\obj\x64\Debug\IEGBLL.dll
+E:\6132兰州二期1228\6132-兰州二期20141228\IEGBLL\obj\x64\Debug\IEGBLL.pdb
+F:\myProjects\我修改过的\6132-兰州二期20150101\6132-兰州二期20150101\IEGBLL\bin\x64\Debug\IEGBLL.dll
+F:\myProjects\我修改过的\6132-兰州二期20150101\6132-兰州二期20150101\IEGBLL\bin\x64\Debug\IEGBLL.pdb
+F:\myProjects\我修改过的\6132-兰州二期20150101\6132-兰州二期20150101\IEGBLL\bin\x64\Debug\IEGModel.dll
+F:\myProjects\我修改过的\6132-兰州二期20150101\6132-兰州二期20150101\IEGBLL\bin\x64\Debug\IEGModel.pdb
+F:\myProjects\我修改过的\6132-兰州二期20150101\6132-兰州二期20150101\IEGBLL\obj\x64\Debug\ResolveAssemblyReference.cache
+F:\myProjects\我修改过的\6132-兰州二期20150101\6132-兰州二期20150101\IEGBLL\obj\x64\Debug\IEGBLL.dll
+F:\myProjects\我修改过的\6132-兰州二期20150101\6132-兰州二期20150101\IEGBLL\obj\x64\Debug\IEGBLL.pdb
+C:\Users\01310797\Desktop\6132兰州二期-20150806Update\IEGBLL\bin\x64\Debug\IEGBLL.dll
+C:\Users\01310797\Desktop\6132兰州二期-20150806Update\IEGBLL\bin\x64\Debug\IEGBLL.pdb
+C:\Users\01310797\Desktop\6132兰州二期-20150806Update\IEGBLL\bin\x64\Debug\IEGModel.dll
+C:\Users\01310797\Desktop\6132兰州二期-20150806Update\IEGBLL\bin\x64\Debug\IEGModel.pdb
+C:\Users\01310797\Desktop\6132兰州二期-20150806Update\IEGBLL\obj\x64\Debug\ResolveAssemblyReference.cache
+C:\Users\01310797\Desktop\6132兰州二期-20150806Update\IEGBLL\obj\x64\Debug\IEGBLL.dll
+C:\Users\01310797\Desktop\6132兰州二期-20150806Update\IEGBLL\obj\x64\Debug\IEGBLL.pdb
+E:\mywork\6132兰州二期-20150810Update\IEGBLL\bin\x64\Debug\IEGBLL.dll
+E:\mywork\6132兰州二期-20150810Update\IEGBLL\bin\x64\Debug\IEGBLL.pdb
+E:\mywork\6132兰州二期-20150810Update\IEGBLL\bin\x64\Debug\IEGModel.dll
+E:\mywork\6132兰州二期-20150810Update\IEGBLL\bin\x64\Debug\IEGModel.pdb
+E:\mywork\6132兰州二期-20150810Update\IEGBLL\obj\x64\Debug\ResolveAssemblyReference.cache
+E:\mywork\6132兰州二期-20150810Update\IEGBLL\obj\x64\Debug\IEGBLL.dll
+E:\mywork\6132兰州二期-20150810Update\IEGBLL\obj\x64\Debug\IEGBLL.pdb
+E:\mywork\6132兰州二期-20150829\IEGBLL\bin\x64\Debug\IEGBLL.dll
+E:\mywork\6132兰州二期-20150829\IEGBLL\bin\x64\Debug\IEGBLL.pdb
+E:\mywork\6132兰州二期-20150829\IEGBLL\bin\x64\Debug\IEGModel.dll
+E:\mywork\6132兰州二期-20150829\IEGBLL\bin\x64\Debug\IEGModel.pdb
+E:\mywork\6132兰州二期-20150829\IEGBLL\obj\x64\Debug\ResolveAssemblyReference.cache
+E:\mywork\6132兰州二期-20150829\IEGBLL\obj\x64\Debug\IEGBLL.dll
+E:\mywork\6132兰州二期-20150829\IEGBLL\obj\x64\Debug\IEGBLL.pdb
+E:\mywork\6132兰州二期-20150831\IEGBLL\bin\x64\Debug\IEGBLL.dll
+E:\mywork\6132兰州二期-20150831\IEGBLL\bin\x64\Debug\IEGBLL.pdb
+E:\mywork\6132兰州二期-20150831\IEGBLL\bin\x64\Debug\IEGModel.dll
+E:\mywork\6132兰州二期-20150831\IEGBLL\bin\x64\Debug\IEGModel.pdb
+E:\mywork\6132兰州二期-20150831\IEGBLL\obj\x64\Debug\ResolveAssemblyReference.cache
+E:\mywork\6132兰州二期-20150831\IEGBLL\obj\x64\Debug\IEGBLL.dll
+E:\mywork\6132兰州二期-20150831\IEGBLL\obj\x64\Debug\IEGBLL.pdb
+E:\mywork\6132兰州二期-20150902\IEGBLL\bin\x64\Debug\IEGBLL.dll
+E:\mywork\6132兰州二期-20150902\IEGBLL\bin\x64\Debug\IEGBLL.pdb
+E:\mywork\6132兰州二期-20150902\IEGBLL\bin\x64\Debug\IEGModel.dll
+E:\mywork\6132兰州二期-20150902\IEGBLL\bin\x64\Debug\IEGModel.pdb
+E:\mywork\6132兰州二期-20150902\IEGBLL\obj\x64\Debug\ResolveAssemblyReference.cache
+E:\mywork\6132兰州二期-20150902\IEGBLL\obj\x64\Debug\IEGBLL.dll
+E:\mywork\6132兰州二期-20150902\IEGBLL\obj\x64\Debug\IEGBLL.pdb
+C:\Program Files (x86)\mo\6132-兰州二期-20150906\6132-兰州二期Dev\IEGBLL\bin\x64\Debug\IEGBLL.dll
+C:\Program Files (x86)\mo\6132-兰州二期-20150906\6132-兰州二期Dev\IEGBLL\bin\x64\Debug\IEGBLL.pdb
+C:\Program Files (x86)\mo\6132-兰州二期-20150906\6132-兰州二期Dev\IEGBLL\bin\x64\Debug\IEGModel.dll
+C:\Program Files (x86)\mo\6132-兰州二期-20150906\6132-兰州二期Dev\IEGBLL\bin\x64\Debug\IEGModel.pdb
+C:\Program Files (x86)\mo\6132-兰州二期-20150906\6132-兰州二期Dev\IEGBLL\obj\x64\Debug\ResolveAssemblyReference.cache
+C:\Program Files (x86)\mo\6132-兰州二期-20150906\6132-兰州二期Dev\IEGBLL\obj\x64\Debug\IEGBLL.dll
+C:\Program Files (x86)\mo\6132-兰州二期-20150906\6132-兰州二期Dev\IEGBLL\obj\x64\Debug\IEGBLL.pdb
+C:\Program Files (x86)\mo\6132-兰州二期-20150912\6132-兰州二期Dev\IEGBLL\bin\x64\Debug\IEGBLL.dll
+C:\Program Files (x86)\mo\6132-兰州二期-20150912\6132-兰州二期Dev\IEGBLL\bin\x64\Debug\IEGBLL.pdb
+C:\Program Files (x86)\mo\6132-兰州二期-20150912\6132-兰州二期Dev\IEGBLL\bin\x64\Debug\IEGModel.dll
+C:\Program Files (x86)\mo\6132-兰州二期-20150912\6132-兰州二期Dev\IEGBLL\bin\x64\Debug\IEGModel.pdb
+C:\Program Files (x86)\mo\6132-兰州二期-20150912\6132-兰州二期Dev\IEGBLL\obj\x64\Debug\ResolveAssemblyReference.cache
+C:\Program Files (x86)\mo\6132-兰州二期-20150912\6132-兰州二期Dev\IEGBLL\obj\x64\Debug\IEGBLL.dll
+C:\Program Files (x86)\mo\6132-兰州二期-20150912\6132-兰州二期Dev\IEGBLL\obj\x64\Debug\IEGBLL.pdb
+C:\Program Files (x86)\mo\6132-兰州二期20150914\6132-兰州二期Dev\IEGBLL\bin\x64\Debug\IEGBLL.dll
+C:\Program Files (x86)\mo\6132-兰州二期20150914\6132-兰州二期Dev\IEGBLL\bin\x64\Debug\IEGBLL.pdb
+C:\Program Files (x86)\mo\6132-兰州二期20150914\6132-兰州二期Dev\IEGBLL\bin\x64\Debug\IEGModel.dll
+C:\Program Files (x86)\mo\6132-兰州二期20150914\6132-兰州二期Dev\IEGBLL\bin\x64\Debug\IEGModel.pdb
+C:\Program Files (x86)\mo\6132-兰州二期20150914\6132-兰州二期Dev\IEGBLL\obj\x64\Debug\ResolveAssemblyReference.cache
+C:\Program Files (x86)\mo\6132-兰州二期20150914\6132-兰州二期Dev\IEGBLL\obj\x64\Debug\IEGBLL.dll
+C:\Program Files (x86)\mo\6132-兰州二期20150914\6132-兰州二期Dev\IEGBLL\obj\x64\Debug\IEGBLL.pdb
+C:\Program Files (x86)\mo\6132-兰州二期-20150914\6132-兰州二期Dev\IEGBLL\bin\x64\Debug\IEGBLL.dll
+C:\Program Files (x86)\mo\6132-兰州二期-20150914\6132-兰州二期Dev\IEGBLL\bin\x64\Debug\IEGBLL.pdb
+C:\Program Files (x86)\mo\6132-兰州二期-20150914\6132-兰州二期Dev\IEGBLL\bin\x64\Debug\IEGModel.dll
+C:\Program Files (x86)\mo\6132-兰州二期-20150914\6132-兰州二期Dev\IEGBLL\bin\x64\Debug\IEGModel.pdb
+C:\Program Files (x86)\mo\6132-兰州二期-20150914\6132-兰州二期Dev\IEGBLL\obj\x64\Debug\ResolveAssemblyReference.cache
+C:\Program Files (x86)\mo\6132-兰州二期-20150914\6132-兰州二期Dev\IEGBLL\obj\x64\Debug\IEGBLL.dll
+C:\Program Files (x86)\mo\6132-兰州二期-20150914\6132-兰州二期Dev\IEGBLL\obj\x64\Debug\IEGBLL.pdb
+E:\myProjects\我修改过的\6132-兰州二期-20150916\6132-兰州二期Dev\IEGBLL\bin\x64\Debug\IEGBLL.dll
+E:\myProjects\我修改过的\6132-兰州二期-20150916\6132-兰州二期Dev\IEGBLL\bin\x64\Debug\IEGBLL.pdb
+E:\myProjects\我修改过的\6132-兰州二期-20150916\6132-兰州二期Dev\IEGBLL\bin\x64\Debug\IEGModel.dll
+E:\myProjects\我修改过的\6132-兰州二期-20150916\6132-兰州二期Dev\IEGBLL\bin\x64\Debug\IEGModel.pdb
+E:\myProjects\我修改过的\6132-兰州二期-20150916\6132-兰州二期Dev\IEGBLL\obj\x64\Debug\ResolveAssemblyReference.cache
+E:\myProjects\我修改过的\6132-兰州二期-20150916\6132-兰州二期Dev\IEGBLL\obj\x64\Debug\IEGBLL.dll
+E:\myProjects\我修改过的\6132-兰州二期-20150916\6132-兰州二期Dev\IEGBLL\obj\x64\Debug\IEGBLL.pdb
+E:\myProjects\我修改过的\6132-兰州二期-20160509\6132-兰州二期Dev\IEGBLL\bin\x64\Debug\IEGBLL.dll
+E:\myProjects\我修改过的\6132-兰州二期-20160509\6132-兰州二期Dev\IEGBLL\bin\x64\Debug\IEGBLL.pdb
+E:\myProjects\我修改过的\6132-兰州二期-20160509\6132-兰州二期Dev\IEGBLL\bin\x64\Debug\IEGModel.dll
+E:\myProjects\我修改过的\6132-兰州二期-20160509\6132-兰州二期Dev\IEGBLL\bin\x64\Debug\IEGModel.pdb
+E:\myProjects\我修改过的\6132-兰州二期-20160509\6132-兰州二期Dev\IEGBLL\obj\x64\Debug\ResolveAssemblyReference.cache
+E:\myProjects\我修改过的\6132-兰州二期-20160509\6132-兰州二期Dev\IEGBLL\obj\x64\Debug\IEGBLL.dll
+E:\myProjects\我修改过的\6132-兰州二期-20160509\6132-兰州二期Dev\IEGBLL\obj\x64\Debug\IEGBLL.pdb
